@@ -196,18 +196,25 @@
         display: flex;
         gap: 10px;
         flex-wrap: nowrap;
+        cursor: pointer;
 
         label {
             display: inline-block;
+            cursor: pointer;
         }
 
         img {
             width: 140px;
             height: 80px;
             object-fit: cover;
+            cursor: pointer;
 
             ~ span {
-                display: none;
+                display: block;
+                font-size: 13px;
+                text-align: center;
+                color: lighten($black-color, 80%);
+                cursor: pointer;
             }
         }
     }
