@@ -1,0 +1,26 @@
+.header {
+  background-color: darken($color: $white-color, $amount: 2%);
+  border-bottom: 1px solid transparentize($color: $black-color, $amount: 0.95);
+  &__top {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &__site-logo {
+    max-width: 200px;
+    margin: 0 auto;
+
+    a {
+      display: inline-block;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

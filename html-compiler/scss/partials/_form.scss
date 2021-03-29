@@ -1,0 +1,321 @@
+.form-title {
+    border-bottom: 1px solid transparentize($color: $black-color, $amount: 0.95);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 600;
+    color: $primary-color;
+
+    @include breakpoint(large) {
+        font-size: 25px;
+    }
+
+    &__counter {
+        font-size: 21px;
+        font-style: italic;
+        font-weight: 400;
+        color: darken($white-color, 30%);
+    }
+
+    &__sub {
+        display: flex;
+        gap: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 19px;
+        font-weight: 600;
+        text-transform: none;
+
+        small {
+            display: block;
+            width: 100%;
+            color: lighten($color: $black-color, $amount: 60%);
+            font-size: 18px;
+        }
+    }
+
+    &__info {
+        display: block;
+        width: 100%;
+        font-size: 14px !important; 
+        color: $red-color !important;
+    }
+}
+
+.question-title {
+    color: $secondary-color;
+}
+
+.form-box {
+    padding: 30px;
+
+    fieldset.form-box__inner {
+        padding-left: 100px;
+    }
+
+    &__text {
+        padding: 20px;
+        line-height: 1.7;
+        color: lighten($color: $black-color, $amount: 40%);
+
+        p {
+            margin-bottom: 16px;
+        }
+    }
+
+    legend {
+        background-color: transparentize($color: $black-color, $amount: 0.99);
+        border: 1px solid transparentize($color: $black-color, $amount: 0.95);
+        padding: 12px;
+        font-weight: 600;
+        font-size: 19px;
+        color: $secondary-color;
+        line-height: 1;
+    }
+
+    fieldset {
+        border: 1px solid transparentize($color: $black-color, $amount: 0.90);
+        padding: 20px;
+
+        ~ fieldset {
+            margin-top: 20px;
+        }
+    }
+
+    input, textarea, select {
+        border: 1px solid transparentize($color: $black-color, $amount: 0.75);
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    input[type*="submit"] {
+        width: auto;
+    }
+
+    input[type*="checkbox"],
+    input[type*="radio"] {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        cursor: pointer;
+
+        ~ label {
+            width: calc(100% - 40px);
+        }
+
+        &:hover {
+            outline: 1px dashed transparentize($color: $secondary-color, $amount: 0.5);
+        }
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    label {
+        // position: absolute;
+        // top: 50%;
+        // left: 6px;
+        // transform: translate(0, -50%);
+        display: block;
+        // padding-left: 15px;
+        // padding-right: 15px;
+        // transition: 0.3s;
+        font-size: 15px;
+        font-weight: 600;
+        color: lighten($black-color, 50%);
+        text-transform: uppercase;
+        // z-index: 2;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    li {
+        position: relative;
+        box-shadow: 0 0 2px transparentize($color: $black-color, $amount: 0.98);
+        border: 1px solid transparentize($color: $black-color, $amount: 0.98);
+        border-radius: 4px;
+        width: 100%;
+        margin: 8px 2px;
+        padding: 8px 16px;
+
+        @include breakpoint(smallup) {
+            width: 48%;
+        }
+
+        @include breakpoint(large) {
+            width: 24%;
+            margin: 8px 4px;
+        }
+
+        &.one-third {
+            @include breakpoint(smallup) {
+                width: 48%;
+            }
+
+            @include breakpoint(large) {
+                width: 30%;
+            }   
+        }
+
+        &.half-width {
+            @include breakpoint(large) {
+                width: 49%;
+            }
+        }
+
+        &.full-width {
+            width: 100%;
+        }
+
+        // &.edit {
+        //     label {
+        //         top: 0;
+        //         transform: none;
+        //         padding-left: 0;
+        //         padding-right: 0;
+        
+        //         .lead & {
+        //           left: 0;
+        //         }
+        //       }
+        
+        //       input,
+        //       select {
+        //         color: lighten($black-color, 20%);
+        //       }
+        // }
+    }
+
+    .checkbox-field,
+    .radio-field {
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+
+        label {
+            display: inline-block;
+        }
+
+        img {
+            width: 140px;
+            height: 80px;
+            object-fit: cover;
+
+            ~ span {
+                display: none;
+            }
+        }
+    }
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid transparentize($color: $black-color, $amount: 0.90);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.custom-list {
+    list-style: disc;
+    padding-left: 26px;
+
+    ul {
+        list-style: decimal-leading-zero;
+        padding-left: 16px;
+    }
+    li {
+        width: 100%;
+        border: 0;
+        padding: 4px;
+        margin: 0;
+    }
+}
+
+.fields-bar {
+    display: flex;
+    
+    &__head {
+        img {
+            width: 140px;
+            height: 80px;
+            object-fit: cover;
+
+            ~ span {
+                display: none;
+            }
+        }
+    }
+
+    .checkbox-field,
+    .radio-field {
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+
+        label {
+            display: inline-block;
+        }
+    }
+
+    &__data {
+        width: calc(100% - 150px);
+        min-width: clac(90px * 10);
+    }
+
+    &--columns {
+        li {
+            width: 90px;
+        }
+    }
+}
+
+.rate-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    input[type*="radio"] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        visibility: hidden;
+        width: 22px;
+        height: 22px;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        display: inline-block;
+        padding: 6px;
+        background: url("#{$image-path}star-default.svg") no-repeat center center;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      label.selected,
+      label.selected ~ label {
+        background: url("#{$image-path}star-reviewed.svg") no-repeat center center;
+      }
+}
+
+.table {
+    label {
+        font-size: 0;
+        text-indent: -99999px;
+    }
+}
