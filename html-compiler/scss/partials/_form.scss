@@ -50,7 +50,13 @@
     padding: 30px;
 
     fieldset.form-box__inner {
-        padding-left: 100px;
+        @include breakpoint(large) {
+            padding-left: 100px;
+        }
+    }
+
+    &--w100 {
+        min-width: 100%;
     }
 
     &__text {

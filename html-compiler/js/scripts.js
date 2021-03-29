@@ -47,4 +47,38 @@ jQuery(document).ready(function(){
         }
         return siblings;
     };
+
+    /**
+     * Toggle scripting
+     */
+     let toggleClicker = document.querySelectorAll('[class*="toggle-clicker-"]');
+     if (toggleClicker.length > 0) {
+        toggleClicker.forEach((toggle, index) => {
+            var countToggle = index + 1,
+                toggleClickerClass = ".toggle-clicker-" + countToggle,
+                toggleDataClass = ".toggle-data-" + countToggle,
+                toggleDataSiblingClass = ".toggle-data-" + countToggle + "__sibling",
+                toggleHolderClass = ".toggle-data-box-" + countToggle;
+                
+            jQuery(toggleClickerClass).on('change', function (e) {
+                getSiblings(this.parentElement).forEach(item => {
+                    item.classList.remove('selected');
+                });
+                this.parentElement.classList.add('selected');
+                if(jQuery(toggleClickerClass).val() == "gaunpalika") {
+                    jQuery(toggleDataSiblingClass).addClass("visible");
+                    jQuery(toggleDataClass).removeClass("visible");
+                    jQuery(toggleHolderClass).addClass('visible');
+                } else if(jQuery(toggleClickerClass).val() == "") {
+                    jQuery(toggleDataClass).removeClass("visible");
+                    jQuery(toggleDataSiblingClass).removeClass("visible");
+                    jQuery(toggleHolderClass).removeClass('visible');
+                } else {
+                    jQuery(toggleDataClass).addClass("visible");
+                    jQuery(toggleDataSiblingClass).removeClass("visible");
+                    jQuery(toggleHolderClass).addClass('visible');
+                }
+            });
+        });
+     }
 });

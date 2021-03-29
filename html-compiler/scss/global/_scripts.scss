@@ -1,0 +1,7 @@
+[class*="toggle-data-"] {
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+}
