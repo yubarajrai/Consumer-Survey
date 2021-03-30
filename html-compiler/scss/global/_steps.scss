@@ -1,0 +1,7 @@
+[class*="toggle-step-box-"] {
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+}
