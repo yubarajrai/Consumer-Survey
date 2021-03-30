@@ -69,14 +69,16 @@ jQuery(document).ready(function(){
                     jQuery(toggleDataSiblingClass).addClass("visible");
                     jQuery(toggleDataClass).removeClass("visible");
                     jQuery(toggleHolderClass).addClass('visible');
-                } else if(jQuery(toggleClickerClass).val() == "") {
-                    jQuery(toggleDataClass).removeClass("visible");
-                    jQuery(toggleDataSiblingClass).removeClass("visible");
-                    jQuery(toggleHolderClass).removeClass('visible');
-                } else {
+                } else if(jQuery(toggleClickerClass).val() == "12-15") {
+                    jQuery(toggleDataClass).addClass("visible");
+                } else if(jQuery(toggleClickerClass).val() == "mc-smc") {
                     jQuery(toggleDataClass).addClass("visible");
                     jQuery(toggleDataSiblingClass).removeClass("visible");
                     jQuery(toggleHolderClass).addClass('visible');
+                } else {
+                    jQuery(toggleDataClass).removeClass("visible");
+                    jQuery(toggleDataSiblingClass).removeClass("visible");
+                    jQuery(toggleHolderClass).removeClass('visible');
                 }
             });
         });

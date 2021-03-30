@@ -32,7 +32,7 @@
         </div>
     </nav>
 </header>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-1">
         <div class="column small-12">
             <h2 class="form-title"><span class="form-title__counter">1.</span>&nbsp;<span>Openning Information</span></h2>
         </div>
@@ -73,7 +73,7 @@
                     </li>
                     <li class="one-third">
                         <label for="urban_rural">Urban/Rural</label>
-                        <select id="urban_rural" name="urban_rural" class="toggle-clicker-1 demo">
+                        <select id="urban_rural" name="urban_rural" class="toggle-clicker-1">
                             <option value="">Choose Urban/Rural</option>
                             <option value="mc-smc">MC/SMC</option>
                             <option value="gaunpalika">Gaunpalika</option>
@@ -174,17 +174,20 @@
                 </ul>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-next-clicker-1" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-2">
         <div class="column small-12">
             <h2 class="form-title"><span class="form-title__counter">2.</span>&nbsp;<span>Recruitment Questionnaire</span></h2>
+        </div>
+        <div class="column small-12 toggle-step-box-2">
             <div class="form-box__text">
                 <p>नमस्ते म म्याक्स मिडियाबाट, म्याक्स मिडिया एउटा स्वतन्त्ररुपले सर्वेक्षण गर्ने सस्था हो । यो सस्थाले नियमितरुपमा विभिन्न संघ सस्थाहरुको बस्तु तथा सेवाको सर्वेक्षण कार्य गर्दै आइरहेको छ ।</p>
                 <p>हामी बिभिन्न प्रकारका व्यक्तिलाई भेट्छौं र विभिन्न उत्पादन, सेवा तथा मुद्दाहरुमा उनीहरुको बिचार, सल्लाह, सुझावहरु संकलन गर्दछौं ।  यसै सिलसिलामा अहिले हामी तपाइको पेय पदार्थ प्रतिको धारणा सम्बन्धी सर्वेक्षण गर्न गइरहेका छौ । यस सर्वेक्षणका लागि ३० मिनेट जति समय लाग्छ र तपाईले केहि प्रश्नहरुको जवाफ दिनु पर्ने हुन्छ । तसर्थ यस कार्यका लागि तपाईको बहुमुल्य समय दिनुहुन अनुरोध गर्दछु ।</p>
                 <p>यहाँ तपाइले दिनु भएका उत्तरहरु सही वा गलत भन्ने हुदैन । हामी तपाईलाई बिश्वस्त तुल्याउन चाहन्छौ की तपाईले दिनु भएको सुचनाहरु बिशुद्घ सर्वेक्षणका लागि मात्र प्रयोग गर्नेछौ । साथै यी सुचनाहरु गोप्यरुपमा राखिनेछ । तपाईंको नाम र प्रतिक्रियाहरू म्याक्स मिडियाको मार्ग निर्देशन अनुसार कसैसँग साझेदारी हुँदैन । हामीले यस सर्वेक्षणका लागि आवस्यक पर्ने सबै मानिसहरु लाई भेटेर अन्तवार्ता/सर्वे मार्फत धारणाहरु संकलन गर्दैछौ ।</p>
             </div>
-        </div>
-        <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">RQ1a.</span> 
                 <span>Do you or any of your family members work in any of the following types of companies?<small>तपाईको परिवारका कुनै पनि सदस्यले निम्न प्रकारको कम्पनीमा काम गर्नुहुन्छ? तल दिइएका कम्पनीका प्रकारहरु पढेर सुनाउनुहोस् ।</small></span>
             </h3>
@@ -225,8 +228,12 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="column small-12 button-box">
+                <a href="#" class="button toggle-previous-clicker-2" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-2" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-3">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">RQ1b.</span>&nbsp;<span>Gender (Do not ask)</span></h3>
             <fieldset class="form-box__inner">
                 <ul>
@@ -244,8 +251,12 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-3" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-3" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-4">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">RQ1c.</span>&nbsp;<span>Could you please tell me your age on your last birthday?<small>तपाइले हाल पुरा गर्नु भएको उमेर कति हो?</small></span></h3>
             <fieldset class="form-box__inner">
                 <ul>
@@ -255,9 +266,9 @@
                     </li>
                     <li class="half-width">
                         <label for="age_code">Age Code</label>
-                        <select id="age_code" name="age_code">
+                        <select id="age_code" name="age_code" class="toggle-clicker-2">
                             <option value="">Choose Age Code</option>
-                            <option value="-11>">Under 12</option>
+                            <option value="-11">Under 12</option>
                             <option value="12-15">12-15 Yrs</option>
                             <option value="16-19">16-19 Yrs</option>
                             <option value="20-29">20-29 Yrs</option>
@@ -268,7 +279,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-box__inner">
+            <fieldset class="form-box__inner toggle-data-2">
                 <h2 class="form-title__sub question-title wrap">
                     <span class="form-title__info">For Kids in Age Group of 12-15</span>
                     <span><small>Ask parent for permission to interview the child.</small></span>
@@ -300,10 +311,14 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-4" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-4" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
     </div>
     <div class="row form-box">
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-5">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">RQ1d.</span> 
                 <span>Have you participated in any interviews other than a political survey in past 6 months?<small>तपाई विगत ६ महिना भित्रमा राजनैतिक सर्वेक्षण बाहेकका अन्य अन्तवार्तामा सहभागि हुनु भएको छ?</small></span>
             </h3>
@@ -319,8 +334,12 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-5" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-5" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-6">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">RQ1e.</span> 
                 <span>We would like to ask you some questions about all kinds of beverages. Would you like to participate in our study?<small>हामी तपाईंलाई पेय पदार्थहरूको सबै प्रकारको बारेमा केहि प्रश्न सोध्न चाहन्छौं । के तपाईं हाम्रो अध्ययनमा सहभागि हुन चाहानुहुन्छ?</small></span>
             </h3>
@@ -336,13 +355,17 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-6" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-6" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-7">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">RQ2.</span> 
                 <span>We have to conduct this study among people from certain groups of people only. Can you please tell us the current occupation of the chief wage earner i.e. the person who contributes the maximum to the monthly household expenditure?<small>हामीले यो अध्ययन सबै समुहका मानिसहरुका बिच केही समूहका मानिसहरू माझ मात्रै गर्नु पर्दछ । त्यसैले तपाईको घरको मुख्य कमाई गर्ने व्यक्ति (जुन व्यत्तिले हाल तपाईको घर खर्च चलाइरहेछ) ले पुरा समय काम गर्ने पेशा बताई दिनु हुन्छ?</small></span>
             </h3>
             <fieldset class="form-box__inner">
-                <span class="form-title__info">Ask this question to parent / guardian if the respondent is 12-15 years old.</span>
+                <span class="form-title__info"><strong>Instruction to Interviewer:</strong> Ask this question to parent / guardian if the respondent is 12-15 years old.</span>
                 <ul>
                     <li class="radio-field one-third">
                         <input type="radio" id="occupation_1" name="occupation" value="अदक्ष कामदार">
@@ -395,8 +418,12 @@
                 </ul>
                 <span class="form-title__info">If CWE is Retired, ask for Last Occupation</span>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-7" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-7" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-8">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">RQ3.</span> 
                 <span>Up to what level has the Chief Wage Earner studied?<small>तपाईको घरको कमाउने मुख्य व्यक्तिले पुरा गरेको शैक्षिक योग्यता कति होला (जुन व्यक्तिले हाल तपाईको घर खर्च चलाइरहेछ)</small></span>
             </h3>
@@ -432,8 +459,12 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-8" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-8" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div><hr/>
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-9">
             <fieldset>
                 <legend>SEC Quota</legend>
                 <ul>
@@ -453,10 +484,14 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-9" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-9" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
     </div>
     <div class="row form-box">
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-10">
             <h2 class="form-title"><span class="form-title__counter">3.</span>&nbsp;<span>Main Questionaire</span></h2>
             <div class="form-box__text">
                 <p><strong>SAY:</strong> We would now like to ask you some questions about all brands of Ready-to-drink beverages. By Ready-to-drink beverages we mean beverages like cold drinks, packaged juices, energy drinks, packaged water, soda, etc. except ALCOHOL.</p>
@@ -469,25 +504,29 @@
                 </ul><br/>
                 <p class="form-title__info">Do not show screen to the respondent.</p>
             </div>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-10" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-10" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-11">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BA1</span> 
                 <span>Thinking about specific brands of ready-to-drink beverages and not just the overall beverage type, which would you say is your favorite beverage brand? Please mention the specific brand name.</span>
             </h3>
             <fieldset class="form-box__inner">
                 <ul>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_1" name="ba1_response" value="CocaCola">
+                        <input type="radio" id="ba1_response_1" name="ba1_response" value="7up">
                         <label for="ba1_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
+                            <img src="./uploads/7-up.jpeg" alt="7up"/>
+                            <span>7up</span>
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_2" name="ba1_response" value="Fanta">
+                        <input type="radio" id="ba1_response_2" name="ba1_response" value="CocaCola">
                         <label for="ba1_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
+                            <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                            <span>CocaCola</span>
                         </label>
                     </li>
                     <li class="radio-field">
@@ -498,80 +537,215 @@
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_4" name="ba1_response" value="Pepsi">
+                        <input type="radio" id="ba1_response_4" name="ba1_response" value="Thums Up">
                         <label for="ba1_response_4">
-                            <img src="./uploads/pepsi.png" alt="Pepsi"/>
+                            <img src="./uploads/thumsup.png" alt="Thums Up"/>
+                            <span>Thums Up</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_5" name="ba1_response" value="Limca">
+                        <label for="ba1_response_5">
+                            <img src="./uploads/limca.png" alt="Limca"/>
+                            <span>Limca</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_6" name="ba1_response" value="Fanta Orrange">
+                        <label for="ba1_response_6">
+                            <img src="./uploads/fanta-orrange.png" alt="Fanta Orrange"/>
+                            <span>Fanta Orrange</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_7" name="ba1_response" value="Pepsi">
+                        <label for="ba1_response_7">
+                            <img src="./uploads/pepsi.jpg" alt="Pepsi"/>
                             <span>Pepsi</span>
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_5" name="ba1_response" value="7Up">
-                        <label for="ba1_response_5">
-                            <img src="./uploads/7up.jpg" alt="7Up"/>
-                            <span>7Up</span>
-                        </label>
-                    </li>
-                    <li class="radio-field">
-                        <input type="radio" id="ba1_response_6" name="ba1_response" value="Mirinda">
-                        <label for="ba1_response_6">
-                            <img src="./uploads/mirinda.jpg" alt="Mirinda"/>
+                        <input type="radio" id="ba1_response_8" name="ba1_response" value="Mirinda">
+                        <label for="ba1_response_8">
+                            <img src="./uploads/mirinda.png" alt="Mirinda"/>
                             <span>Mirinda</span>
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_7" name="ba1_response" value="RedBull">
-                        <label for="ba1_response_7">
-                            <img src="./uploads/redbull.png" alt="RedBull"/>
-                            <span>RedBull</span>
-                        </label>
-                    </li>
-                    <li class="radio-field">
-                        <input type="radio" id="ba1_response_8" name="ba1_response" value="Mountain Due">
-                        <label for="ba1_response_8">
-                            <img src="./uploads/dew.jpg" alt="Mountain Dew"/>
+                        <input type="radio" id="ba1_response_9" name="ba1_response" value="Mountain Dew">
+                        <label for="ba1_response_9">
+                            <img src="./uploads/mountain-dew.png" alt="Mountain Dew"/>
                             <span>Mountain Dew</span>
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_9" name="ba1_response" value="Frooto">
-                        <label for="ba1_response_9">
-                            <img src="./uploads/frooto.jpg" alt="Frooto"/>
-                            <span>Frooto</span>
-                        </label>
-                    </li>
-                    <li class="radio-field">
-                        <input type="radio" id="ba1_response_10" name="ba1_response" value="Footi">
+                        <input type="radio" id="ba1_response_10" name="ba1_response" value="7up Nimbooz Masala">
                         <label for="ba1_response_10">
-                            <img src="./uploads/frooti.png" alt="Footi"/>
-                            <span>Footi</span>
+                            <span>7up Nimbooz Masala</span>
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_11" name="ba1_response" value="Real">
+                        <input type="radio" id="ba1_response_11" name="ba1_response" value="Fanta Lemon">
                         <label for="ba1_response_11">
+                            <span>Fanta Lemon</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_12" name="ba1_response" value="Diet Coke">
+                        <label for="ba1_response_12">
+                            <img src="./uploads/diet-coke.png" alt="Diet Coke"/>
+                            <span>Diet Coke</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_13" name="ba1_response" value="Coke Zero">
+                        <label for="ba1_response_13">
+                            <img src="./uploads/coke-zero.jpeg" alt="Coke Zero"/>
+                            <span>Coke Zero</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_14" name="ba1_response" value="Teem Soda">
+                        <label for="ba1_response_14">
+                            <img src="./uploads/teem-soda.png" alt="Teem Soda"/>
+                            <span>Teem Soda</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_15" name="ba1_response" value="Kinley Soda">
+                        <label for="ba1_response_15">
+                            <img src="./uploads/kinley-soda.jpg" alt="Kinley Soda"/>
+                            <span>Kinley Soda</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_16" name="ba1_response" value="Lehar Soda">
+                        <label for="ba1_response_16">
+                            <span>Lehar Soda</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_17" name="ba1_response" value="Kinley">
+                        <label for="ba1_response_17">
+                            <img src="./uploads/kinley.jpeg" alt="Kinley"/>
+                            <span>Kinley</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_18" name="ba1_response" value="Aqua Hundred">
+                        <label for="ba1_response_18">
+                            <img src="./uploads/aqua-hundred.jpg" alt="Aqua Hundred"/>
+                            <span>Aqua Hundred</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_19" name="ba1_response" value="Aquafina">
+                        <label for="ba1_response_19">
+                            <img src="./uploads/aqua-fina.png" alt="Aquafina"/>
+                            <span>Aquafina</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_20" name="ba1_response" value="Bailley">
+                        <label for="ba1_response_20">
+                            <img src="./uploads/bailley.jpeg" alt="Bailley"/>
+                            <span>Bailley</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_21" name="ba1_response" value="Pran Litchi Drink">
+                        <label for="ba1_response_21">
+                            <img src="./uploads/pran-litchi.jpg" alt="Pran Litchi Drink"/>
+                            <span>Pran Litchi Drink</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_22" name="ba1_response" value="Rio">
+                        <label for="ba1_response_22">
+                            <img src="./uploads/rio.jpeg" alt="Rio"/>
+                            <span>Rio</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_23" name="ba1_response" value="Pran Mango Drink">
+                        <label for="ba1_response_23">
+                            <span>Pran Mango Drink</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_24" name="ba1_response" value="Real">
+                        <label for="ba1_response_24">
                             <img src="./uploads/real.jpg" alt="Real"/>
                             <span>Real</span>
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_12" name="ba1_response" value="Extra Punch">
-                        <label for="ba1_response_12">
-                            <img src="./uploads/real.jpg" alt="Extra Punch"/>
-                            <span>Extra Punch</span>
+                        <input type="radio" id="ba1_response_25" name="ba1_response" value="Frooti">
+                        <label for="ba1_response_25">
+                            <img src="./uploads/frooti.png" alt="Frooti"/>
+                            <span>Frooti</span>
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_13" name="ba1_response" value="Aqua">
-                        <label for="ba1_response_13">
-                            <img src="./uploads/aquahundred.jpg" alt="Aqua Hundred"/>
-                            <span>Aqua Hundred</span>
+                        <input type="radio" id="ba1_response_26" name="ba1_response" value="Maaza">
+                        <label for="ba1_response_26">
+                            <img src="./uploads/maaza.png" alt="Maaza"/>
+                            <span>Maaza</span>
                         </label>
                     </li>
                     <li class="radio-field">
-                        <input type="radio" id="ba1_response_13" name="ba1_response" value="Aquafina">
-                        <label for="ba1_response_13">
-                            <img src="./uploads/aquafine.jpg" alt="Aquafina"/>
-                            <span>Aquafina</span>
+                        <input type="radio" id="ba1_response_27" name="ba1_response" value="Chabaa">
+                        <label for="ba1_response_27">
+                            <img src="./uploads/chabaa.png" alt="Chabaa"/>
+                            <span>Chabaa</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_28" name="ba1_response" value="Slice">
+                        <label for="ba1_response_28">
+                            <img src="./uploads/slice.jpeg" alt="Slice"/>
+                            <span>Slice</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_29" name="ba1_response" value="Goodlife Mango">
+                        <label for="ba1_response_29">
+                            <span>Goodlife Mango</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_30" name="ba1_response" value="Frooto">
+                        <label for="ba1_response_30">
+                            <img src="./uploads/frooto.png" alt="Frooto"/>
+                            <span>Frooto</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_31" name="ba1_response" value="Appy">
+                        <label for="ba1_response_31">
+                            <img src="./uploads/appy.png" alt="Appy"/>
+                            <span>Appy</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_32" name="ba1_response" value="Sting">
+                        <label for="ba1_response_32">
+                            <img src="./uploads/sting.png" alt="Sting"/>
+                            <span>Sting</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_33" name="ba1_response" value="Red Bull">
+                        <label for="ba1_response_33">
+                            <img src="./uploads/red-bull.jpg" alt="Red Bull"/>
+                            <span>Red Bull</span>
+                        </label>
+                    </li>
+                    <li class="radio-field">
+                        <input type="radio" id="ba1_response_34" name="ba1_response" value="Amul Kool">
+                        <label for="ba1_response_34">
+                            <img src="./uploads/amul-kool.png" alt="Amul Kool"/>
+                            <span>Amul Kool</span>
                         </label>
                     </li>
                     <li class="full-width">
@@ -585,9 +759,13 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-11" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-11" title="Next">Next&nbsp;&rarr;</a>
+            </div>
         </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-12">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BA2</span> 
                 <span>Spontaneous Brands</span>
@@ -595,17 +773,10 @@
             <fieldset class="form-box__inner">
                 <ul>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_1" name="ba2_response" value="CocaCola">
-                        <label for="ba2_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_2" name="ba2_response" value="Fanta">
+                        <input type="checkbox" id="ba2_response_2" name="ba2_response" value="CocaCola">
                         <label for="ba2_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
+                            <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                            <span>CocaCola</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
@@ -616,87 +787,226 @@
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_4" name="ba2_response" value="Pepsi">
+                        <input type="checkbox" id="ba2_response_4" name="ba2_response" value="Thums Up">
                         <label for="ba2_response_4">
-                            <img src="./uploads/pepsi.png" alt="Pepsi"/>
+                            <img src="./uploads/thumsup.png" alt="Thums Up"/>
+                            <span>Thums Up</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_5" name="ba2_response" value="Limca">
+                        <label for="ba2_response_5">
+                            <img src="./uploads/limca.png" alt="Limca"/>
+                            <span>Limca</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_6" name="ba2_response" value="Fanta Orrange">
+                        <label for="ba2_response_6">
+                            <img src="./uploads/fanta-orrange.png" alt="Fanta Orrange"/>
+                            <span>Fanta Orrange</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_7" name="ba2_response" value="Pepsi">
+                        <label for="ba2_response_7">
+                            <img src="./uploads/pepsi.jpg" alt="Pepsi"/>
                             <span>Pepsi</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_5" name="ba2_response" value="7Up">
-                        <label for="ba2_response_5">
-                            <img src="./uploads/7up.jpg" alt="7Up"/>
-                            <span>7Up</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_6" name="ba2_response" value="Mirinda">
-                        <label for="ba2_response_6">
-                            <img src="./uploads/mirinda.jpg" alt="Mirinda"/>
+                        <input type="checkbox" id="ba2_response_8" name="ba2_response" value="Mirinda">
+                        <label for="ba2_response_8">
+                            <img src="./uploads/mirinda.png" alt="Mirinda"/>
                             <span>Mirinda</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_7" name="ba2_response" value="RedBull">
-                        <label for="ba2_response_7">
-                            <img src="./uploads/redbull.png" alt="RedBull"/>
-                            <span>RedBull</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_8" name="ba2_response" value="Mountain Due">
-                        <label for="ba2_response_8">
-                            <img src="./uploads/dew.jpg" alt="Mountain Dew"/>
+                        <input type="checkbox" id="ba2_response_9" name="ba2_response" value="Mountain Dew">
+                        <label for="ba2_response_9">
+                            <img src="./uploads/mountain-dew.png" alt="Mountain Dew"/>
                             <span>Mountain Dew</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_9" name="ba2_response" value="Frooto">
-                        <label for="ba2_response_9">
-                            <img src="./uploads/frooto.jpg" alt="Frooto"/>
-                            <span>Frooto</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_10" name="ba2_response" value="Footi">
+                        <input type="checkbox" id="ba2_response_10" name="ba2_response" value="7up Nimbooz Masala">
                         <label for="ba2_response_10">
-                            <img src="./uploads/frooti.png" alt="Footi"/>
-                            <span>Footi</span>
+                            <span>7up Nimbooz Masala</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_11" name="ba2_response" value="Real">
+                        <input type="checkbox" id="ba2_response_11" name="ba2_response" value="Fanta Lemon">
                         <label for="ba2_response_11">
+                            <span>Fanta Lemon</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_12" name="ba2_response" value="Diet Coke">
+                        <label for="ba2_response_12">
+                            <img src="./uploads/diet-coke.png" alt="Diet Coke"/>
+                            <span>Diet Coke</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_13" name="ba2_response" value="Coke Zero">
+                        <label for="ba2_response_13">
+                            <img src="./uploads/coke-zero.jpeg" alt="Coke Zero"/>
+                            <span>Coke Zero</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_14" name="ba2_response" value="Teem Soda">
+                        <label for="ba2_response_14">
+                            <img src="./uploads/teem-soda.png" alt="Teem Soda"/>
+                            <span>Teem Soda</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_15" name="ba2_response" value="Kinley Soda">
+                        <label for="ba2_response_15">
+                            <img src="./uploads/kinley-soda.jpg" alt="Kinley Soda"/>
+                            <span>Kinley Soda</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_16" name="ba2_response" value="Lehar Soda">
+                        <label for="ba2_response_16">
+                            <span>Lehar Soda</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_17" name="ba2_response" value="Kinley">
+                        <label for="ba2_response_17">
+                            <img src="./uploads/kinley.jpeg" alt="Kinley"/>
+                            <span>Kinley</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_18" name="ba2_response" value="Aqua Hundred">
+                        <label for="ba2_response_18">
+                            <img src="./uploads/aqua-hundred.jpg" alt="Aqua Hundred"/>
+                            <span>Aqua Hundred</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_19" name="ba2_response" value="Aquafina">
+                        <label for="ba2_response_19">
+                            <img src="./uploads/aqua-fina.png" alt="Aquafina"/>
+                            <span>Aquafina</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_20" name="ba2_response" value="Bailley">
+                        <label for="ba2_response_20">
+                            <img src="./uploads/bailley.jpeg" alt="Bailley"/>
+                            <span>Bailley</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_21" name="ba2_response" value="Pran Litchi Drink">
+                        <label for="ba2_response_21">
+                            <img src="./uploads/pran-litchi.jpg" alt="Pran Litchi Drink"/>
+                            <span>Pran Litchi Drink</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_22" name="ba2_response" value="Rio">
+                        <label for="ba2_response_22">
+                            <img src="./uploads/rio.jpeg" alt="Rio"/>
+                            <span>Rio</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_23" name="ba2_response" value="Pran Mango Drink">
+                        <label for="ba2_response_23">
+                            <span>Pran Mango Drink</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_24" name="ba2_response" value="Real">
+                        <label for="ba2_response_24">
                             <img src="./uploads/real.jpg" alt="Real"/>
                             <span>Real</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_12" name="ba2_response" value="Extra Punch">
-                        <label for="ba2_response_12">
-                            <img src="./uploads/real.jpg" alt="Extra Punch"/>
-                            <span>Extra Punch</span>
+                        <input type="checkbox" id="ba2_response_25" name="ba2_response" value="Frooti">
+                        <label for="ba2_response_25">
+                            <img src="./uploads/frooti.png" alt="Frooti"/>
+                            <span>Frooti</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba2_response_13" name="ba2_response" value="Aqua">
-                        <label for="ba2_response_13">
-                            <img src="./uploads/aquahundred.jpg" alt="Aqua Hundred"/>
-                            <span>Aqua Hundred</span>
+                        <input type="checkbox" id="ba2_response_26" name="ba2_response" value="Maaza">
+                        <label for="ba2_response_26">
+                            <img src="./uploads/maaza.png" alt="Maaza"/>
+                            <span>Maaza</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba1_response_13" name="ba1_response" value="Aquafina">
-                        <label for="ba1_response_13">
-                            <img src="./uploads/aquafine.jpg" alt="Aquafina"/>
-                            <span>Aquafina</span>
+                        <input type="checkbox" id="ba2_response_27" name="ba2_response" value="Chabaa">
+                        <label for="ba2_response_27">
+                            <img src="./uploads/chabaa.png" alt="Chabaa"/>
+                            <span>Chabaa</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_28" name="ba2_response" value="Slice">
+                        <label for="ba2_response_28">
+                            <img src="./uploads/slice.jpeg" alt="Slice"/>
+                            <span>Slice</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_29" name="ba2_response" value="Goodlife Mango">
+                        <label for="ba2_response_29">
+                            <span>Goodlife Mango</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_30" name="ba2_response" value="Frooto">
+                        <label for="ba2_response_30">
+                            <img src="./uploads/frooto.png" alt="Frooto"/>
+                            <span>Frooto</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_31" name="ba2_response" value="Appy">
+                        <label for="ba2_response_31">
+                            <img src="./uploads/appy.png" alt="Appy"/>
+                            <span>Appy</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_32" name="ba2_response" value="Sting">
+                        <label for="ba2_response_32">
+                            <img src="./uploads/sting.png" alt="Sting"/>
+                            <span>Sting</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_33" name="ba2_response" value="Red Bull">
+                        <label for="ba2_response_33">
+                            <img src="./uploads/red-bull.jpg" alt="Red Bull"/>
+                            <span>Red Bull</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba2_response_34" name="ba2_response" value="Amul Kool">
+                        <label for="ba2_response_34">
+                            <img src="./uploads/amul-kool.png" alt="Amul Kool"/>
+                            <span>Amul Kool</span>
                         </label>
                     </li>
                 </ul>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-12" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-12" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-13">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BA3</span> 
                 <span>Apart from the brands already mentioned, have you ever seen or heard of any of these brands?<small>(Added)</small></span>
@@ -704,108 +1014,170 @@
             <fieldset class="form-box__inner">
                 <ul>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_1" name="ba3_response" value="CocaCola">
-                        <label for="ba3_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_2" name="ba3_response" value="Fanta">
-                        <label for="ba3_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_3" name="ba3_response" value="Sprite">
-                        <label for="ba3_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_4" name="ba3_response" value="Pepsi">
+                        <input type="checkbox" id="ba3_response_4" name="ba3_response" value="Thums Up">
                         <label for="ba3_response_4">
-                            <img src="./uploads/pepsi.png" alt="Pepsi"/>
-                            <span>Pepsi</span>
+                            <img src="./uploads/thumsup.png" alt="Thums Up"/>
+                            <span>Thums Up</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_5" name="ba3_response" value="7Up">
+                        <input type="checkbox" id="ba3_response_5" name="ba3_response" value="Limca">
                         <label for="ba3_response_5">
-                            <img src="./uploads/7up.jpg" alt="7Up"/>
-                            <span>7Up</span>
+                            <img src="./uploads/limca.png" alt="Limca"/>
+                            <span>Limca</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_6" name="ba3_response" value="Mirinda">
-                        <label for="ba3_response_6">
-                            <img src="./uploads/mirinda.jpg" alt="Mirinda"/>
-                            <span>Mirinda</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_7" name="ba3_response" value="RedBull">
-                        <label for="ba3_response_7">
-                            <img src="./uploads/redbull.png" alt="RedBull"/>
-                            <span>RedBull</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_8" name="ba3_response" value="Mountain Due">
-                        <label for="ba3_response_8">
-                            <img src="./uploads/dew.jpg" alt="Mountain Dew"/>
-                            <span>Mountain Dew</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_9" name="ba3_response" value="Frooto">
-                        <label for="ba3_response_9">
-                            <img src="./uploads/frooto.jpg" alt="Frooto"/>
-                            <span>Frooto</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_10" name="ba3_response" value="Footi">
+                        <input type="checkbox" id="ba3_response_10" name="ba3_response" value="7up Nimbooz Masala">
                         <label for="ba3_response_10">
-                            <img src="./uploads/frooti.png" alt="Footi"/>
-                            <span>Footi</span>
+                            <span>7up Nimbooz Masala</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_11" name="ba3_response" value="Real">
+                        <input type="checkbox" id="ba3_response_11" name="ba3_response" value="Fanta Lemon">
                         <label for="ba3_response_11">
-                            <img src="./uploads/real.jpg" alt="Real"/>
-                            <span>Real</span>
+                            <span>Fanta Lemon</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_12" name="ba3_response" value="Extra Punch">
+                        <input type="checkbox" id="ba3_response_12" name="ba3_response" value="Diet Coke">
                         <label for="ba3_response_12">
-                            <img src="./uploads/real.jpg" alt="Extra Punch"/>
-                            <span>Extra Punch</span>
+                            <img src="./uploads/diet-coke.png" alt="Diet Coke"/>
+                            <span>Diet Coke</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba3_response_13" name="ba3_response" value="Aqua">
+                        <input type="checkbox" id="ba3_response_13" name="ba3_response" value="Coke Zero">
                         <label for="ba3_response_13">
-                            <img src="./uploads/aquahundred.jpg" alt="Aqua Hundred"/>
+                            <img src="./uploads/coke-zero.jpeg" alt="Coke Zero"/>
+                            <span>Coke Zero</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_14" name="ba3_response" value="Teem Soda">
+                        <label for="ba3_response_14">
+                            <img src="./uploads/teem-soda.png" alt="Teem Soda"/>
+                            <span>Teem Soda</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_15" name="ba3_response" value="Kinley Soda">
+                        <label for="ba3_response_15">
+                            <img src="./uploads/kinley-soda.jpg" alt="Kinley Soda"/>
+                            <span>Kinley Soda</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_16" name="ba3_response" value="Lehar Soda">
+                        <label for="ba3_response_16">
+                            <span>Lehar Soda</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_17" name="ba3_response" value="Kinley">
+                        <label for="ba3_response_17">
+                            <img src="./uploads/kinley.jpeg" alt="Kinley"/>
+                            <span>Kinley</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_18" name="ba3_response" value="Aqua Hundred">
+                        <label for="ba3_response_18">
+                            <img src="./uploads/aqua-hundred.jpg" alt="Aqua Hundred"/>
                             <span>Aqua Hundred</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="ba1_response_13" name="ba1_response" value="Aquafina">
-                        <label for="ba1_response_13">
-                            <img src="./uploads/aquafine.jpg" alt="Aquafina"/>
+                        <input type="checkbox" id="ba3_response_19" name="ba3_response" value="Aquafina">
+                        <label for="ba3_response_19">
+                            <img src="./uploads/aqua-fina.png" alt="Aquafina"/>
                             <span>Aquafina</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_20" name="ba3_response" value="Bailley">
+                        <label for="ba3_response_20">
+                            <img src="./uploads/bailley.jpeg" alt="Bailley"/>
+                            <span>Bailley</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_22" name="ba3_response" value="Rio">
+                        <label for="ba3_response_22">
+                            <img src="./uploads/rio.jpeg" alt="Rio"/>
+                            <span>Rio</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_23" name="ba3_response" value="Pran Mango Drink">
+                        <label for="ba3_response_23">
+                            <span>Pran Mango Drink</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_25" name="ba3_response" value="Frooti">
+                        <label for="ba3_response_25">
+                            <img src="./uploads/frooti.png" alt="Frooti"/>
+                            <span>Frooti</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_26" name="ba3_response" value="Maaza">
+                        <label for="ba3_response_26">
+                            <img src="./uploads/maaza.png" alt="Maaza"/>
+                            <span>Maaza</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_27" name="ba3_response" value="Chabaa">
+                        <label for="ba3_response_27">
+                            <img src="./uploads/chabaa.png" alt="Chabaa"/>
+                            <span>Chabaa</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_29" name="ba3_response" value="Goodlife Mango">
+                        <label for="ba3_response_29">
+                            <span>Goodlife Mango</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_30" name="ba3_response" value="Frooto">
+                        <label for="ba3_response_30">
+                            <img src="./uploads/frooto.png" alt="Frooto"/>
+                            <span>Frooto</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_31" name="ba3_response" value="Appy">
+                        <label for="ba3_response_31">
+                            <img src="./uploads/appy.png" alt="Appy"/>
+                            <span>Appy</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_32" name="ba3_response" value="Sting">
+                        <label for="ba3_response_32">
+                            <img src="./uploads/sting.png" alt="Sting"/>
+                            <span>Sting</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="ba3_response_34" name="ba3_response" value="Amul Kool">
+                        <label for="ba3_response_34">
+                            <img src="./uploads/amul-kool.png" alt="Amul Kool"/>
+                            <span>Amul Kool</span>
                         </label>
                     </li>
                 </ul>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-13" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-13" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-14">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BC1</span> 
                 <span>Please indicate which of these brands you have drunk in the last 12 months.</span>
@@ -813,17 +1185,17 @@
             <fieldset class="form-box__inner">
                 <ul>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc1_response_1" name="bc1_response" value="CocaCola">
+                        <input type="checkbox" id="bc1_response_1" name="bc1_response" value="7up">
                         <label for="bc1_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
+                            <img src="./uploads/7-up.jpeg" alt="7up"/>
+                            <span>7up</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc1_response_2" name="bc1_response" value="Fanta">
+                        <input type="checkbox" id="bc1_response_2" name="bc1_response" value="CocaCola">
                         <label for="bc1_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
+                            <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                            <span>CocaCola</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
@@ -834,24 +1206,133 @@
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc1_response_4" name="bc1_response" value="Pepsi">
+                        <input type="checkbox" id="bc1_response_4" name="bc1_response" value="Thums Up">
                         <label for="bc1_response_4">
-                            <img src="./uploads/pepsi.png" alt="Pepsi"/>
+                            <img src="./uploads/thumsup.png" alt="Thums Up"/>
+                            <span>Thums Up</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_6" name="bc1_response" value="Fanta Orrange">
+                        <label for="bc1_response_6">
+                            <img src="./uploads/fanta-orrange.png" alt="Fanta Orrange"/>
+                            <span>Fanta Orrange</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_7" name="bc1_response" value="Pepsi">
+                        <label for="bc1_response_7">
+                            <img src="./uploads/pepsi.jpg" alt="Pepsi"/>
                             <span>Pepsi</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc1_response_5" name="bc1_response" value="7Up">
-                        <label for="bc1_response_5">
-                            <img src="./uploads/7up.jpg" alt="7Up"/>
-                            <span>7Up</span>
+                        <input type="checkbox" id="bc1_response_8" name="bc1_response" value="Mirinda">
+                        <label for="bc1_response_8">
+                            <img src="./uploads/mirinda.png" alt="Mirinda"/>
+                            <span>Mirinda</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_9" name="bc1_response" value="Mountain Dew">
+                        <label for="bc1_response_9">
+                            <img src="./uploads/mountain-dew.png" alt="Mountain Dew"/>
+                            <span>Mountain Dew</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_12" name="bc1_response" value="Diet Coke">
+                        <label for="bc1_response_12">
+                            <img src="./uploads/diet-coke.png" alt="Diet Coke"/>
+                            <span>Diet Coke</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_15" name="bc1_response" value="Kinley Soda">
+                        <label for="bc1_response_15">
+                            <img src="./uploads/kinley-soda.jpg" alt="Kinley Soda"/>
+                            <span>Kinley Soda</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_17" name="bc1_response" value="Kinley">
+                        <label for="bc1_response_17">
+                            <img src="./uploads/kinley.jpeg" alt="Kinley"/>
+                            <span>Kinley</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_18" name="bc1_response" value="Aqua Hundred">
+                        <label for="bc1_response_18">
+                            <img src="./uploads/aqua-hundred.jpg" alt="Aqua Hundred"/>
+                            <span>Aqua Hundred</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_21" name="bc1_response" value="Pran Litchi Drink">
+                        <label for="bc1_response_21">
+                            <img src="./uploads/pran-litchi.jpg" alt="Pran Litchi Drink"/>
+                            <span>Pran Litchi Drink</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_22" name="bc1_response" value="Rio">
+                        <label for="bc1_response_22">
+                            <img src="./uploads/rio.jpeg" alt="Rio"/>
+                            <span>Rio</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_24" name="bc1_response" value="Real">
+                        <label for="bc1_response_24">
+                            <img src="./uploads/real.jpg" alt="Real"/>
+                            <span>Real</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_25" name="bc1_response" value="Frooti">
+                        <label for="bc1_response_25">
+                            <img src="./uploads/frooti.png" alt="Frooti"/>
+                            <span>Frooti</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_26" name="bc1_response" value="Maaza">
+                        <label for="bc1_response_26">
+                            <img src="./uploads/maaza.png" alt="Maaza"/>
+                            <span>Maaza</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_28" name="bc1_response" value="Slice">
+                        <label for="bc1_response_28">
+                            <img src="./uploads/slice.jpeg" alt="Slice"/>
+                            <span>Slice</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_31" name="bc1_response" value="Appy">
+                        <label for="bc1_response_31">
+                            <img src="./uploads/appy.png" alt="Appy"/>
+                            <span>Appy</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc1_response_33" name="bc1_response" value="Red Bull">
+                        <label for="bc1_response_33">
+                            <img src="./uploads/red-bull.jpg" alt="Red Bull"/>
+                            <span>Red Bull</span>
                         </label>
                     </li>
                 </ul>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-14" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-14" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-15">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BC3</span> 
                 <span>Please select which ones you have drunk in the last 4 weeks?</span>
@@ -859,17 +1340,17 @@
             <fieldset class="form-box__inner">
                 <ul>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc3_response_1" name="bc3_response" value="CocaCola">
+                        <input type="checkbox" id="bc3_response_1" name="bc3_response" value="7up">
                         <label for="bc3_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
+                            <img src="./uploads/7-up.jpeg" alt="7up"/>
+                            <span>7up</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc3_response_2" name="bc3_response" value="Fanta">
+                        <input type="checkbox" id="bc3_response_2" name="bc3_response" value="CocaCola">
                         <label for="bc3_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
+                            <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                            <span>CocaCola</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
@@ -879,11 +1360,71 @@
                             <span>Sprite</span>
                         </label>
                     </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc3_response_6" name="bc3_response" value="Fanta Orrange">
+                        <label for="bc3_response_6">
+                            <img src="./uploads/fanta-orrange.png" alt="Fanta Orrange"/>
+                            <span>Fanta Orrange</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc3_response_9" name="bc3_response" value="Mountain Dew">
+                        <label for="bc3_response_9">
+                            <img src="./uploads/mountain-dew.png" alt="Mountain Dew"/>
+                            <span>Mountain Dew</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc3_response_17" name="bc3_response" value="Kinley">
+                        <label for="bc3_response_17">
+                            <img src="./uploads/kinley.jpeg" alt="Kinley"/>
+                            <span>Kinley</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc3_response_21" name="bc3_response" value="Pran Litchi Drink">
+                        <label for="bc3_response_21">
+                            <img src="./uploads/pran-litchi.jpg" alt="Pran Litchi Drink"/>
+                            <span>Pran Litchi Drink</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc3_response_24" name="bc3_response" value="Real">
+                        <label for="bc3_response_24">
+                            <img src="./uploads/real.jpg" alt="Real"/>
+                            <span>Real</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc3_response_25" name="bc3_response" value="Frooti">
+                        <label for="bc3_response_25">
+                            <img src="./uploads/frooti.png" alt="Frooti"/>
+                            <span>Frooti</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc3_response_31" name="bc3_response" value="Appy">
+                        <label for="bc3_response_31">
+                            <img src="./uploads/appy.png" alt="Appy"/>
+                            <span>Appy</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc3_response_33" name="bc3_response" value="Red Bull">
+                        <label for="bc3_response_33">
+                            <img src="./uploads/red-bull.jpg" alt="Red Bull"/>
+                            <span>Red Bull</span>
+                        </label>
+                    </li>
                 </ul>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-15" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-15" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-16">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BC4</span> 
                 <span>Please select which ones you have drunk in the last 7 days?</span>
@@ -891,28 +1432,49 @@
             <fieldset class="form-box__inner">
                 <ul>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc4_response_2" name="bc4_response" value="Fanta">
-                        <label for="bc4_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
+                        <input type="checkbox" id="bc4_response_1" name="bc4_response" value="7up">
+                        <label for="bc4_response_1">
+                            <img src="./uploads/7-up.jpeg" alt="7up"/>
+                            <span>7up</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc4_response_3" name="bc4_response" value="Sprite">
-                        <label for="bc4_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
+                        <input type="checkbox" id="bc4_response_2" name="bc4_response" value="CocaCola">
+                        <label for="bc4_response_2">
+                            <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                            <span>CocaCola</span>
                         </label>
                     </li>
-                    <li class="checkbox-field full-width">
-                        <input type="checkbox" id="bc4_response_4" name="bc4_response" value="Sprite">
-                        <label for="bc4_response_4">None of the above</label>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc4_response_6" name="bc4_response" value="Fanta Orrange">
+                        <label for="bc4_response_6">
+                            <img src="./uploads/fanta-orrange.png" alt="Fanta Orrange"/>
+                            <span>Fanta Orrange</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc4_response_9" name="bc4_response" value="Mountain Dew">
+                        <label for="bc4_response_9">
+                            <img src="./uploads/mountain-dew.png" alt="Mountain Dew"/>
+                            <span>Mountain Dew</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-field">
+                        <input type="checkbox" id="bc4_response_31" name="bc4_response" value="Appy">
+                        <label for="bc4_response_31">
+                            <img src="./uploads/appy.png" alt="Appy"/>
+                            <span>Appy</span>
+                        </label>
                     </li>
                 </ul>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-16" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-16" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-17">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BC7</span> 
                 <span>Please select which ones you have drunk yesterday?</span>
@@ -920,28 +1482,28 @@
             <fieldset class="form-box__inner">
                 <ul>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc7_response_2" name="bc7_response" value="Fanta">
-                        <label for="bc7_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
+                        <input type="checkbox" id="bc4_response_6" name="bc4_response" value="Fanta Orrange">
+                        <label for="bc4_response_6">
+                            <img src="./uploads/fanta-orrange.png" alt="Fanta Orrange"/>
+                            <span>Fanta Orrange</span>
                         </label>
                     </li>
                     <li class="checkbox-field">
-                        <input type="checkbox" id="bc7_response_3" name="bc7_response" value="Sprite">
-                        <label for="bc7_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
+                        <input type="checkbox" id="bc4_response_9" name="bc4_response" value="Mountain Dew">
+                        <label for="bc4_response_9">
+                            <img src="./uploads/mountain-dew.png" alt="Mountain Dew"/>
+                            <span>Mountain Dew</span>
                         </label>
-                    </li>
-                    <li class="checkbox-field full-width">
-                        <input type="checkbox" id="bc7_response_4" name="bc7_response" value="Sprite">
-                        <label for="bc7_response_4">None of the above</label>
                     </li>
                 </ul>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-17" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-17" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-18">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BC11</span> 
                 <span>On an average, how frequently do you drink each brand shown below?</span>
@@ -1059,8 +1621,12 @@
                 </div>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-18" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-18" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-19">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BC12</span> 
                 <span>And on those days that you drank each brand, on average how many times during the day did you drink it?</span>
@@ -1152,8 +1718,12 @@
                 </div>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-19" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-19" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-20">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BC2</span> 
                 <span>Please indicate which, if any, of these brands below you would never drink.</span>
@@ -1163,7 +1733,7 @@
                     <li class="checkbox-field">
                         <input type="checkbox" id="bc1_response_1" name="bc1_response" value="CocaCola">
                         <label for="bc1_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
+                            <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
                             <span>CocaCola</span>
                         </label>
                     </li>
@@ -1198,13 +1768,21 @@
                 </ul>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-20" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-20" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
     <div class="row form-box">
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-21">
             <h2 class="form-title"><span class="form-title__counter">4.</span>&nbsp;<span>Brand Imagery: Main Brands</span></h2>
             <div class="form-box__text">
                 <p>Now I’m going to read out a number of statements, please indicate how well do you think each statement describes each brand. Please respond even if you have not tried some of them, we are just interested in how you think or feel about these brands.</p>
                 <p>अब म तपाई लाई केहि भनाईहरु पढेर सुनाँउछु, कृपया प्रत्यक भनाईले प्रत्यक ब्राण्डको बारेमा कति राम्रो सँग ब्याख्या गर्छ बताईदिनु होला । यदि तपाईले यी मध्य केहि ब्राण्डहरु पिउनु भएको छैन भने पनि ती ब्राण्डका बारेमा तपाईले के सोच्नु वा महशुस गर्नुहुन्छ बताई दिनु होला ।</p>
+            </div>
+            <div class="column small-12 button-box">
+                <a href="#" class="button toggle-previous-clicker-21" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-21" title="Next">Next&nbsp;&rarr;</a>
             </div>
         </div>
         <div class="column small-12">
@@ -1216,13 +1794,13 @@
             </div>
             <fieldset class="form-box__inner form-box--w100">
                 <h3 class="form-title__sub"><span class="form-title__counter">Q1.</span> <span>Is a brand you love? <small>(यो तपाईलाई मनपर्ने ब्राण्ड हो ?)</small></span></h3>
-                <div class="fields-bar fields-bar--columns">
+                <div class="fields-bar wrap fields-bar--columns toggle-step-box-22">
                     <div class="fields-bar__data table-wrapper">
                         <div class="table table--center">
                             <div class="thead">
                                 <div class="tr">
                                     <div class="th"></div>
-                                    <div class="th">0</div>
+                                    <div class="th lable-note-box"><span class="lable-note">Does not describe at all</span>0</div>
                                     <div class="th">1</div>
                                     <div class="th">2</div>
                                     <div class="th">3</div>
@@ -1232,7 +1810,7 @@
                                     <div class="th">7</div>
                                     <div class="th">8</div>
                                     <div class="th">9</div>
-                                    <div class="th">10</div>
+                                    <div class="th lable-note-box"><span class="lable-note">Describes extremely well</span>10</div>
                                 </div>
                             </div>
                             <div class="tbody">
@@ -1378,16 +1956,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-22" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-22" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
                 </div>
                 <br/><hr/><br/><br/>
                 <h3 class="form-title__sub"><span class="form-title__counter">Q2.</span> <span>Is for someone like you? <small>(यो तपाई जस्तो कसैको लागी हो ?)</small></span></h3>
-                <div class="fields-bar fields-bar--columns">
+                <div class="fields-bar wrap fields-bar--columns toggle-step-box-23">
                     <div class="fields-bar__data table-wrapper">
                         <div class="table table--center">
                             <div class="thead">
                                 <div class="tr">
                                     <div class="th"></div>
-                                    <div class="th">0</div>
+                                    <div class="th lable-note-box"><span class="lable-note">Does not describe at all</span>0</div>
                                     <div class="th">1</div>
                                     <div class="th">2</div>
                                     <div class="th">3</div>
@@ -1397,7 +1979,7 @@
                                     <div class="th">7</div>
                                     <div class="th">8</div>
                                     <div class="th">9</div>
-                                    <div class="th">10</div>
+                                    <div class="th lable-note-box"><span class="lable-note">Describes extremely well</span>10</div>
                                 </div>
                             </div>
                             <div class="tbody">
@@ -1544,6 +2126,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-23" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-23" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
                 </div>
             </fieldset>
         </div>
@@ -1552,475 +2138,565 @@
                 <span>For each of the statements shown, please tell me which of these brands you think…<small>तल दिइएका भनाईहरु सुन्दा तपाईको दिमागमा कुन ब्राण्डको नाम याद आउँछ?</small></span>
             </h3>
             <fieldset class="form-box__inner">
-                <h3 class="form-title__sub"><span class="form-title__counter">S1.</span> <span>Is an uplifting drink? <small>(मनोबल बढाउने पेय ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="uplifting_response_0" name="uplifting_response" value="None">
-                        <label for="uplifting_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="uplifting_response_1" name="uplifting_response" value="CocaCola">
-                        <label for="uplifting_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="uplifting_response_2" name="uplifting_response" value="Fanta">
-                        <label for="uplifting_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="uplifting_response_3" name="uplifting_response" value="Sprite">
-                        <label for="uplifting_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S2.</span> <span>Is great tasting? <small>(राम्रो स्वाद भएको ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="great_taste_response_0" name="great_taste_response" value="None">
-                        <label for="great_taste_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="great_taste_response_1" name="great_taste_response" value="CocaCola">
-                        <label for="great_taste_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="great_taste_response_2" name="great_taste_response" value="Fanta">
-                        <label for="great_taste_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="great_taste_response_3" name="great_taste_response" value="Sprite">
-                        <label for="great_taste_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S3.</span> <span>Goes well with food? <small>(खानासँगै खान मील्ने ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="food_response_0" name="food_response" value="None">
-                        <label for="food_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="food_response_1" name="food_response" value="CocaCola">
-                        <label for="food_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="food_response_2" name="food_response" value="Fanta">
-                        <label for="food_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="food_response_3" name="food_response" value="Sprite">
-                        <label for="food_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S4.</span> <span>Is a brand I would like to be seen drinking? <small>(म यो ब्राण्ड पिइ रहेको हेर्न मन पराउन्छु ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="seen_response_0" name="seen_response" value="None">
-                        <label for="seen_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="seen_response_1" name="seen_response" value="CocaCola">
-                        <label for="seen_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="seen_response_2" name="seen_response" value="Fanta">
-                        <label for="seen_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="seen_response_3" name="seen_response" value="Sprite">
-                        <label for="seen_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S5.</span> <span>You feel good about sharing with friends &amp; family? <small>(साथीभाई तथा परिवार संग बांडेमा खुसि महशुस हुने ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="sharing_response_0" name="sharing_response" value="None">
-                        <label for="sharing_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="sharing_response_1" name="sharing_response" value="CocaCola">
-                        <label for="sharing_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="sharing_response_2" name="sharing_response" value="Fanta">
-                        <label for="sharing_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="sharing_response_3" name="sharing_response" value="Sprite">
-                        <label for="sharing_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S6.</span> <span>Makes the moment more fun? <small>(पलहरुलाई अझ रमाइलो बनाँउछ ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="moment_response_0" name="moment_response" value="None">
-                        <label for="moment_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="moment_response_1" name="moment_response" value="CocaCola">
-                        <label for="moment_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="moment_response_2" name="moment_response" value="Fanta">
-                        <label for="moment_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="moment_response_3" name="moment_response" value="Sprite">
-                        <label for="moment_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S7.</span> <span>Is very refreshing? <small>(एकदमै स्फुर्तिदायक ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="refreshing_response_0" name="refreshing_response" value="None">
-                        <label for="refreshing_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="refreshing_response_1" name="refreshing_response" value="CocaCola">
-                        <label for="refreshing_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="refreshing_response_2" name="refreshing_response" value="Fanta">
-                        <label for="refreshing_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="refreshing_response_3" name="refreshing_response" value="Sprite">
-                        <label for="refreshing_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S8.</span> <span>Is a Thirst-quenching brand? <small>(तिर्खा मेटाउने ब्रान्ड ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="thirst_response_0" name="thirst_response" value="None">
-                        <label for="thirst_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="thirst_response_1" name="thirst_response" value="CocaCola">
-                        <label for="thirst_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="thirst_response_2" name="thirst_response" value="Fanta">
-                        <label for="thirst_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="thirst_response_3" name="thirst_response" value="Sprite">
-                        <label for="thirst_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S9.</span> <span>Is always doing new things? <small>(सधै नया चिजहरु गर्ने ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="new_act_response_0" name="new_act_response" value="None">
-                        <label for="new_act_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="new_act_response_1" name="new_act_response" value="CocaCola">
-                        <label for="new_act_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="new_act_response_2" name="new_act_response" value="Fanta">
-                        <label for="new_act_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="new_act_response_3" name="new_act_response" value="Sprite">
-                        <label for="new_act_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S10.</span> <span>Gives you energy? <small>(तपाइलाई शक्ति दिने ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="energy_response_0" name="energy_response" value="None">
-                        <label for="energy_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="energy_response_1" name="energy_response" value="CocaCola">
-                        <label for="energy_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="energy_response_2" name="energy_response" value="Fanta">
-                        <label for="energy_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="energy_response_3" name="energy_response" value="Sprite">
-                        <label for="energy_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S11.</span> <span>It is worth what it costs? <small>(मूल्य अनुरुपको बस्तु भएको ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="cost_response_0" name="cost_response" value="None">
-                        <label for="cost_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="cost_response_1" name="cost_response" value="CocaCola">
-                        <label for="cost_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="cost_response_2" name="cost_response" value="Fanta">
-                        <label for="cost_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="cost_response_3" name="cost_response" value="Sprite">
-                        <label for="cost_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S12.</span> <span>Offers something different? <small>(केहि नया चिजको प्रस्ताब गर्ने / यसले फरक अनुभुती दिन्छ ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="different_response_0" name="different_response" value="None">
-                        <label for="different_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="different_response_1" name="different_response" value="CocaCola">
-                        <label for="different_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="different_response_2" name="different_response" value="Fanta">
-                        <label for="different_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="different_response_3" name="different_response" value="Sprite">
-                        <label for="different_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S13.</span> <span>Is a brand for young people? <small>(जवान व्यक्तिको लागि ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="for_young_response_0" name="for_young_response" value="None">
-                        <label for="for_young_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="for_young_response_1" name="for_young_response" value="CocaCola">
-                        <label for="for_young_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="for_young_response_2" name="for_young_response" value="Fanta">
-                        <label for="for_young_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="for_young_response_3" name="for_young_response" value="Sprite">
-                        <label for="for_young_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S14.</span> <span>It has a strong taste? <small>(कडा स्वाद भएको ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="strong_taste_response_0" name="strong_taste_response" value="None">
-                        <label for="strong_taste_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="strong_taste_response_1" name="strong_taste_response" value="CocaCola">
-                        <label for="strong_taste_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="strong_taste_response_2" name="strong_taste_response" value="Fanta">
-                        <label for="strong_taste_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="strong_taste_response_3" name="strong_taste_response" value="Sprite">
-                        <label for="strong_taste_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
-                <h3 class="form-title__sub"><span class="form-title__counter">S15.</span> <span>Is good when you are having fun with friends? <small>(साथीहरुसंग रमाइलो गर्दा राम्रो हुने ?)</small></span></h3>
-                <ul>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="fun_response_0" name="fun_response" value="None">
-                        <label for="fun_response_0">
-                            <img src="./images/none-image.jpg" alt=""/>
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="fun_response_1" name="fun_response" value="CocaCola">
-                        <label for="fun_response_1">
-                            <img src="./uploads/cocacola.jpg" alt="CocaCola"/>
-                            <span>CocaCola</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="fun_response_2" name="fun_response" value="Fanta">
-                        <label for="fun_response_2">
-                            <img src="./uploads/fanta.png" alt="Fanta"/>
-                            <span>Fanta</span>
-                        </label>
-                    </li>
-                    <li class="checkbox-field">
-                        <input type="checkbox" id="fun_response_3" name="fun_response" value="Sprite">
-                        <label for="fun_response_3">
-                            <img src="./uploads/sprite.png" alt="Sprite"/>
-                            <span>Sprite</span>
-                        </label>
-                    </li>
-                </ul>
+                <div class="toggle-step-box-24">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S1.</span> <span>Is an uplifting drink? <small>(मनोबल बढाउने पेय ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="uplifting_response_0" name="uplifting_response" value="None">
+                            <label for="uplifting_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="uplifting_response_1" name="uplifting_response" value="CocaCola">
+                            <label for="uplifting_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="uplifting_response_2" name="uplifting_response" value="Fanta">
+                            <label for="uplifting_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="uplifting_response_3" name="uplifting_response" value="Sprite">
+                            <label for="uplifting_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-24" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-24" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-25">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S2.</span> <span>Is great tasting? <small>(राम्रो स्वाद भएको ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="great_taste_response_0" name="great_taste_response" value="None">
+                            <label for="great_taste_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="great_taste_response_1" name="great_taste_response" value="CocaCola">
+                            <label for="great_taste_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="great_taste_response_2" name="great_taste_response" value="Fanta">
+                            <label for="great_taste_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="great_taste_response_3" name="great_taste_response" value="Sprite">
+                            <label for="great_taste_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-25" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-25" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-26">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S3.</span> <span>Goes well with food? <small>(खानासँगै खान मील्ने ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="food_response_0" name="food_response" value="None">
+                            <label for="food_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="food_response_1" name="food_response" value="CocaCola">
+                            <label for="food_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="food_response_2" name="food_response" value="Fanta">
+                            <label for="food_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="food_response_3" name="food_response" value="Sprite">
+                            <label for="food_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-26" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-26" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-27">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S4.</span> <span>Is a brand I would like to be seen drinking? <small>(म यो ब्राण्ड पिइ रहेको हेर्न मन पराउन्छु ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="seen_response_0" name="seen_response" value="None">
+                            <label for="seen_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="seen_response_1" name="seen_response" value="CocaCola">
+                            <label for="seen_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="seen_response_2" name="seen_response" value="Fanta">
+                            <label for="seen_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="seen_response_3" name="seen_response" value="Sprite">
+                            <label for="seen_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-27" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-27" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-28">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S5.</span> <span>You feel good about sharing with friends &amp; family? <small>(साथीभाई तथा परिवार संग बांडेमा खुसि महशुस हुने ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="sharing_response_0" name="sharing_response" value="None">
+                            <label for="sharing_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="sharing_response_1" name="sharing_response" value="CocaCola">
+                            <label for="sharing_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="sharing_response_2" name="sharing_response" value="Fanta">
+                            <label for="sharing_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="sharing_response_3" name="sharing_response" value="Sprite">
+                            <label for="sharing_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-28" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-28" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-29">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S6.</span> <span>Makes the moment more fun? <small>(पलहरुलाई अझ रमाइलो बनाँउछ ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="moment_response_0" name="moment_response" value="None">
+                            <label for="moment_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="moment_response_1" name="moment_response" value="CocaCola">
+                            <label for="moment_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="moment_response_2" name="moment_response" value="Fanta">
+                            <label for="moment_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="moment_response_3" name="moment_response" value="Sprite">
+                            <label for="moment_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-29" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-29" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-30">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S7.</span> <span>Is very refreshing? <small>(एकदमै स्फुर्तिदायक ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="refreshing_response_0" name="refreshing_response" value="None">
+                            <label for="refreshing_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="refreshing_response_1" name="refreshing_response" value="CocaCola">
+                            <label for="refreshing_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="refreshing_response_2" name="refreshing_response" value="Fanta">
+                            <label for="refreshing_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="refreshing_response_3" name="refreshing_response" value="Sprite">
+                            <label for="refreshing_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-30" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-30" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-31">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S8.</span> <span>Is a Thirst-quenching brand? <small>(तिर्खा मेटाउने ब्रान्ड ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="thirst_response_0" name="thirst_response" value="None">
+                            <label for="thirst_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="thirst_response_1" name="thirst_response" value="CocaCola">
+                            <label for="thirst_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="thirst_response_2" name="thirst_response" value="Fanta">
+                            <label for="thirst_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="thirst_response_3" name="thirst_response" value="Sprite">
+                            <label for="thirst_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-31" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-31" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-32">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S9.</span> <span>Is always doing new things? <small>(सधै नया चिजहरु गर्ने ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="new_act_response_0" name="new_act_response" value="None">
+                            <label for="new_act_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="new_act_response_1" name="new_act_response" value="CocaCola">
+                            <label for="new_act_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="new_act_response_2" name="new_act_response" value="Fanta">
+                            <label for="new_act_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="new_act_response_3" name="new_act_response" value="Sprite">
+                            <label for="new_act_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-32" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-32" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-33">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S10.</span> <span>Gives you energy? <small>(तपाइलाई शक्ति दिने ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="energy_response_0" name="energy_response" value="None">
+                            <label for="energy_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="energy_response_1" name="energy_response" value="CocaCola">
+                            <label for="energy_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="energy_response_2" name="energy_response" value="Fanta">
+                            <label for="energy_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="energy_response_3" name="energy_response" value="Sprite">
+                            <label for="energy_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-33" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-33" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-34">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S11.</span> <span>It is worth what it costs? <small>(मूल्य अनुरुपको बस्तु भएको ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="cost_response_0" name="cost_response" value="None">
+                            <label for="cost_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="cost_response_1" name="cost_response" value="CocaCola">
+                            <label for="cost_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="cost_response_2" name="cost_response" value="Fanta">
+                            <label for="cost_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="cost_response_3" name="cost_response" value="Sprite">
+                            <label for="cost_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-34" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-34" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-35">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S12.</span> <span>Offers something different? <small>(केहि नया चिजको प्रस्ताब गर्ने / यसले फरक अनुभुती दिन्छ ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="different_response_0" name="different_response" value="None">
+                            <label for="different_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="different_response_1" name="different_response" value="CocaCola">
+                            <label for="different_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="different_response_2" name="different_response" value="Fanta">
+                            <label for="different_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="different_response_3" name="different_response" value="Sprite">
+                            <label for="different_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-35" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-35" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-36">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S13.</span> <span>Is a brand for young people? <small>(जवान व्यक्तिको लागि ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="for_young_response_0" name="for_young_response" value="None">
+                            <label for="for_young_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="for_young_response_1" name="for_young_response" value="CocaCola">
+                            <label for="for_young_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="for_young_response_2" name="for_young_response" value="Fanta">
+                            <label for="for_young_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="for_young_response_3" name="for_young_response" value="Sprite">
+                            <label for="for_young_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-36" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-36" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-37">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S14.</span> <span>It has a strong taste? <small>(कडा स्वाद भएको ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="strong_taste_response_0" name="strong_taste_response" value="None">
+                            <label for="strong_taste_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="strong_taste_response_1" name="strong_taste_response" value="CocaCola">
+                            <label for="strong_taste_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="strong_taste_response_2" name="strong_taste_response" value="Fanta">
+                            <label for="strong_taste_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="strong_taste_response_3" name="strong_taste_response" value="Sprite">
+                            <label for="strong_taste_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-37" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-37" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
+                <div class="toggle-step-box-38">
+                    <h3 class="form-title__sub"><span class="form-title__counter">S15.</span> <span>Is good when you are having fun with friends? <small>(साथीहरुसंग रमाइलो गर्दा राम्रो हुने ?)</small></span></h3>
+                    <ul>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="fun_response_0" name="fun_response" value="None">
+                            <label for="fun_response_0">
+                                <img src="./images/none-image.jpg" alt=""/>
+                                <span>None</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="fun_response_1" name="fun_response" value="CocaCola">
+                            <label for="fun_response_1">
+                                <img src="./uploads/coca-cola.jpg" alt="CocaCola"/>
+                                <span>CocaCola</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="fun_response_2" name="fun_response" value="Fanta">
+                            <label for="fun_response_2">
+                                <img src="./uploads/fanta.png" alt="Fanta"/>
+                                <span>Fanta</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-field">
+                            <input type="checkbox" id="fun_response_3" name="fun_response" value="Sprite">
+                            <label for="fun_response_3">
+                                <img src="./uploads/sprite.png" alt="Sprite"/>
+                                <span>Sprite</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="button-box">
+                        <a href="#" class="button toggle-previous-clicker-38" title="Previous">&larr;&nbsp;Previous</button>
+                        <a href="#" class="button toggle-next-clicker-38" title="Next">Next&nbsp;&rarr;</a>
+                    </div>
+                </div>
             </fieldset>
         </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-39">
         <div class="column small-12">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">BC4.1</span> 
                 <span>Where did you consume?</span>
@@ -2072,10 +2748,14 @@
                 </div>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-39" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-39" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
-    <div class="row form-box">
+    <div class="row form-box toggle-step-box-40">
         <div class="column small-12">
-            <h2 class="form-title__sub question-title"><span class="form-title__counter">BC4.2</span> 
+            <h2 class="form-title__sub question-title"><span class="form-title__counter">BC4.2A</span> 
                 <span>What were you doing when you consumed?</span>
             </h2>
             <h3 class="form-title__sub">At Home</h3>
@@ -2086,133 +2766,42 @@
                     </div>
                     <div class="fields-bar__data">
                         <ul>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_2" name="bc4_2_home_response_fanta" value="Eating a meal">
-                                <label for="bc4_2_home_response_fanta_2">Eating a meal</label>
+                            <li class="full-width">
+                                <select name="bc4_2A_home_response_fanta_1" multiple>
+                                    <option value="Eating a meal">Eating a meal</option>
+                                    <option value="Eating a snack">Eating a snack</option>
+                                    <option value="Doing household chores like cooking, cleaning etc.">Doing household chores like cooking, cleaning etc.</option>
+                                    <option value="Working/Attending meeting / Classes">Working/Attending meeting / Classes</option>
+                                    <option value="Taking a break from work">Taking a break from work</option>
+                                    <option value="Watching TV">Watching TV</option>
+                                    <option value="Listening to misic/radio">Listening to misic/radio</option>
+                                    <option value="Watching content/chatting on mobile">Watching content/chatting on mobile</option>
+                                    <option value="Playing video or computer games">Playing video or computer games</option>
+                                    <option value="Raxaxing/Doing Nothing">Raxaxing/Doing Nothing</option>
+                                    <option value="Socializing with friends">Socializing with friends</option>
+                                    <option value="Reading">Reading</option>
+                                    <option value="Having fun with family">Having fun with family</option>
+                                </select>
                             </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_3" name="bc4_2_home_response_fanta" value="Eating a snack">
-                                <label for="bc4_2_home_response_fanta_3">Eating a snack</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_4" name="bc4_2_home_response_fanta" value="Doing household chores like cooking, cleaning etc.">
-                                <label for="bc4_2_home_response_fanta_4">Doing household chores like cooking, cleaning etc.</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_2" name="bc4_2_home_response_fanta" value="Working/Attending meeting / Classes">
-                                <label for="bc4_2_home_response_fanta_2">Working/Attending meeting / Classes</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_3" name="bc4_2_home_response_fanta" value="Taking a break from work">
-                                <label for="bc4_2_home_response_fanta_3">Taking a break from work</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_4" name="bc4_2_home_response_fanta" value="Watching TV">
-                                <label for="bc4_2_home_response_fanta_4">Watching TV</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_2" name="bc4_2_home_response_fanta" value="Listening to misic/radio">
-                                <label for="bc4_2_home_response_fanta_2">Listening to misic/radio</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_3" name="bc4_2_home_response_fanta" value="Watching content/chatting on mobile">
-                                <label for="bc4_2_home_response_fanta_3">Watching content/chatting on mobile</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_4" name="bc4_2_home_response_fanta" value="Playing video or computer games">
-                                <label for="bc4_2_home_response_fanta_4">Playing video or computer games</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_2" name="bc4_2_home_response_fanta" value="Raxaxing/Doing Nothing">
-                                <label for="bc4_2_home_response_fanta_2">Raxaxing/Doing Nothing</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_3" name="bc4_2_home_response_fanta" value="Socializing with friends">
-                                <label for="bc4_2_home_response_fanta_3">Socializing with friends</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_4" name="bc4_2_home_response_fanta" value="Reading">
-                                <label for="bc4_2_home_response_fanta_4">Reading</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_2" name="bc4_2_home_response_fanta" value="Having fun with family">
-                                <label for="bc4_2_home_response_fanta_2">Having fun with family</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_fanta_3" name="bc4_2_home_response_fanta" value="None of the above">
+                            <li class="checkbox-field full-width">
+                                <input type="checkbox" id="bc4_2A_home_response_fanta_2" name="bc4_2_home_response_fanta" value="None of the above">
                                 <label for="bc4_2_home_response_fanta_3">None of the above</label>
                             </li>
                         </ul>
                     </div>
                 </div>
             </fieldset>
-            <fieldset class="form-box__inner">
-                <div class="fields-bar">
-                    <div class="fields-bar__head">
-                        <img src="./uploads/sprite.png" alt="Sprite"/>
-                    </div>
-                    <div class="fields-bar__data">
-                        <ul>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_2" name="bc4_2_home_response_sprite" value="Eating a meal">
-                                <label for="bc4_2_home_response_sprite_2">Eating a meal</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_3" name="bc4_2_home_response_sprite" value="Eating a snack">
-                                <label for="bc4_2_home_response_sprite_3">Eating a snack</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_4" name="bc4_2_home_response_sprite" value="Doing household chores like cooking, cleaning etc.">
-                                <label for="bc4_2_home_response_sprite_4">Doing household chores like cooking, cleaning etc.</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_2" name="bc4_2_home_response_sprite" value="Working/Attending meeting / Classes">
-                                <label for="bc4_2_home_response_sprite_2">Working/Attending meeting / Classes</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_3" name="bc4_2_home_response_sprite" value="Taking a break from work">
-                                <label for="bc4_2_home_response_sprite_3">Taking a break from work</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_4" name="bc4_2_home_response_sprite" value="Watching TV">
-                                <label for="bc4_2_home_response_sprite_4">Watching TV</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_2" name="bc4_2_home_response_sprite" value="Listening to misic/radio">
-                                <label for="bc4_2_home_response_sprite_2">Listening to misic/radio</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_3" name="bc4_2_home_response_sprite" value="Watching content/chatting on mobile">
-                                <label for="bc4_2_home_response_sprite_3">Watching content/chatting on mobile</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_4" name="bc4_2_home_response_sprite" value="Playing video or computer games">
-                                <label for="bc4_2_home_response_sprite_4">Playing video or computer games</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_2" name="bc4_2_home_response_sprite" value="Raxaxing/Doing Nothing">
-                                <label for="bc4_2_home_response_sprite_2">Raxaxing/Doing Nothing</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_3" name="bc4_2_home_response_sprite" value="Socializing with friends">
-                                <label for="bc4_2_home_response_sprite_3">Socializing with friends</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_4" name="bc4_2_home_response_sprite" value="Reading">
-                                <label for="bc4_2_home_response_sprite_4">Reading</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_2" name="bc4_2_home_response_sprite" value="Having fun with family">
-                                <label for="bc4_2_home_response_sprite_2">Having fun with family</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_home_response_sprite_3" name="bc4_2_home_response_sprite" value="None of the above">
-                                <label for="bc4_2_home_response_sprite_3">None of the above</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </fieldset>
+        </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-40" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-40" title="Next">Next&nbsp;&rarr;</a>
+        </div>
+    </div>
+    <div class="row form-box  toggle-step-box-41">
+        <div class="column small-12">
+            <h2 class="form-title__sub question-title"><span class="form-title__counter">BC4.2B</span> 
+                <span>What were you doing when you consumed?</span>
+            </h2>
             <h3 class="form-title__sub">Out of Home</h3>
             <fieldset class="form-box__inner">
                 <div class="fields-bar">
@@ -2221,48 +2810,22 @@
                     </div>
                     <div class="fields-bar__data">
                         <ul>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_2" name="bc4_2_out_home_response_fanta" value="Eating a meal/snack">
-                                <label for="bc4_2_out_home_response_fanta_2">Eating a meal/snack</label>
+                            <li class="full-width">
+                                <select name="bc4_2B_out_home_response_fanta_1" multiple>
+                                    <option value="Eating a meal/snack">Eating a meal/snack</option>
+                                    <option value="Exercising / Jogging / Sports">Exercising / Jogging / Sports</option>
+                                    <option value="Working/Attending Meeting / School / College">Working/Attending Meeting / School / College</option>
+                                    <option value="Taking a break fro work/in between class">Taking a break fro work/in between class</option>
+                                    <option value="Driving/On the Way">Driving/On the Way</option>
+                                    <option value="Watching TV">Watching TV</option>
+                                    <option value="Listening to misic/radio">Listening to misic/radio</option>
+                                    <option value="Watching content/chatting on mobile">Watching content/chatting on mobile</option>
+                                    <option value="Playing video or computer games">Playing video or computer games</option>
+                                    <option value="Socializing with friends">Socializing with friends</option>
+                                </select>
                             </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_3" name="bc4_2_out_home_response_fanta" value="Exercising/Joggin/Sports">
-                                <label for="bc4_2_out_home_response_fanta_3">Exercising / Jogging / Sports</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_4" name="bc4_2_out_home_response_fanta" value="Working/Attending Meeting / School / College">
-                                <label for="bc4_2_out_home_response_fanta_4">Working/Attending Meeting / School / College</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_2" name="bc4_2_out_home_response_fanta" value="Taking a break fro work/in between class">
-                                <label for="bc4_2_out_home_response_fanta_2">Taking a break fro work/in between class</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_3" name="bc4_2_out_home_response_fanta" value="Driving/On the Way">
-                                <label for="bc4_2_out_home_response_fanta_3">Driving/On the Way</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_4" name="bc4_2_out_home_response_fanta" value="Watching TV">
-                                <label for="bc4_2_out_home_response_fanta_4">Watching TV</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_2" name="bc4_2_out_home_response_fanta" value="Listening to misic/radio">
-                                <label for="bc4_2_out_home_response_fanta_2">Listening to misic/radio</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_3" name="bc4_2_out_home_response_fanta" value="Watching content/chatting on mobile">
-                                <label for="bc4_2_out_home_response_fanta_3">Watching content/chatting on mobile</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_4" name="bc4_2_out_home_response_fanta" value="Playing video or computer games">
-                                <label for="bc4_2_out_home_response_fanta_4">Playing video or computer games</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_3" name="bc4_2_out_home_response_fanta" value="Socializing with friends">
-                                <label for="bc4_2_out_home_response_fanta_3">Socializing with friends</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_fanta_3" name="bc4_2_out_home_response_fanta" value="None of the above">
+                            <li class="checkbox-field full-width">
+                                <input type="checkbox" id="bc4_2B_out_home_response_fanta_2" name="bc4_2_out_home_response_fanta" value="None of the above">
                                 <label for="bc4_2_out_home_response_fanta_3">None of the above</label>
                             </li>
                         </ul>
@@ -2276,61 +2839,39 @@
                     </div>
                     <div class="fields-bar__data">
                         <ul>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_2" name="bc4_2_out_home_response_sprite" value="Eating a meal/snack">
-                                <label for="bc4_2_out_home_response_sprite_2">Eating a meal/snack</label>
+                            <li class="full-width">
+                                <select name="bc4_2_out_home_response_fanta_2" multiple>
+                                    <option value="Eating a meal/snack">Eating a meal/snack</option>
+                                    <option value="Exercising / Jogging / Sports">Exercising / Jogging / Sports</option>
+                                    <option value="Working/Attending Meeting / School / College">Working/Attending Meeting / School / College</option>
+                                    <option value="Taking a break fro work/in between class">Taking a break fro work/in between class</option>
+                                    <option value="Driving/On the Way">Driving/On the Way</option>
+                                    <option value="Watching TV">Watching TV</option>
+                                    <option value="Listening to misic/radio">Listening to misic/radio</option>
+                                    <option value="Watching content/chatting on mobile">Watching content/chatting on mobile</option>
+                                    <option value="Playing video or computer games">Playing video or computer games</option>
+                                    <option value="Socializing with friends">Socializing with friends</option>
+                                </select>
                             </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_3" name="bc4_2_out_home_response_sprite" value="Exercising/Joggin/Sports">
-                                <label for="bc4_2_out_home_response_sprite_3">Exercising / Jogging / Sports</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_4" name="bc4_2_out_home_response_sprite" value="Working/Attending Meeting / School / College">
-                                <label for="bc4_2_out_home_response_sprite_4">Working/Attending Meeting / School / College</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_2" name="bc4_2_out_home_response_sprite" value="Taking a break fro work/in between class">
-                                <label for="bc4_2_out_home_response_sprite_2">Taking a break fro work/in between class</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_3" name="bc4_2_out_home_response_sprite" value="Driving/On the Way">
-                                <label for="bc4_2_out_home_response_sprite_3">Driving/On the Way</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_4" name="bc4_2_out_home_response_sprite" value="Watching TV">
-                                <label for="bc4_2_out_home_response_sprite_4">Watching TV</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_2" name="bc4_2_out_home_response_sprite" value="Listening to misic/radio">
-                                <label for="bc4_2_out_home_response_sprite_2">Listening to misic/radio</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_3" name="bc4_2_out_home_response_sprite" value="Watching content/chatting on mobile">
-                                <label for="bc4_2_out_home_response_sprite_3">Watching content/chatting on mobile</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_4" name="bc4_2_out_home_response_sprite" value="Playing video or computer games">
-                                <label for="bc4_2_out_home_response_sprite_4">Playing video or computer games</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_3" name="bc4_2_out_home_response_sprite" value="Socializing with friends">
-                                <label for="bc4_2_out_home_response_sprite_3">Socializing with friends</label>
-                            </li>
-                            <li class="checkbox-field">
-                                <input type="checkbox" id="bc4_2_out_home_response_sprite_3" name="bc4_2_out_home_response_sprite" value="None of the above">
-                                <label for="bc4_2_out_home_response_sprite_3">None of the above</label>
+                            <li class="checkbox-field full-width">
+                                <input type="checkbox" id="bc4_2_out_home_response_fanta_3" name="bc4_2_out_home_response_fanta" value="None of the above">
+                                <label for="bc4_2_out_home_response_fanta_3">None of the above</label>
                             </li>
                         </ul>
                     </div>
                 </div>
             </fieldset>
         </div>
+        <div class="column small-12 button-box">
+            <a href="#" class="button toggle-previous-clicker-41" title="Previous">&larr;&nbsp;Previous</button>
+            <a href="#" class="button toggle-next-clicker-41" title="Next">Next&nbsp;&rarr;</a>
+        </div>
     </div>
     <div class="row form-box">
         <div class="column small-12">
             <h2 class="form-title"><span class="form-title__counter">5.</span>&nbsp;<span>Classification</span></h2>
         </div>
-        <div class="column small-12">
+        <div class="column small-12 toggle-step-box-42">
             <h3 class="form-title__sub question-title"><span class="form-title__counter">CL2.</span>&nbsp;<span>What is your education level?<small>तपाईले पुरा गर्नु भएको शैक्षिक योग्यताबारेमा बताईदिन सक्नुहुन्छ?</small></span></h3>
             <fieldset class="form-box__inner">
                 <ul>
@@ -2364,11 +2905,18 @@
                     <option value="DK/Refused (थाहा छैन /अस्वीकार गर्नु)">DK/Refused (थाहा छैन /अस्वीकार गर्नु)</option>
                 </select>
             </fieldset>
+            <div class="button-box">
+                <a href="#" class="button toggle-previous-clicker-42" title="Previous">&larr;&nbsp;Previous</button>
+                <a href="#" class="button toggle-next-clicker-42" title="Submit Data">Submit Data&nbsp;&rarr;</a>
+            </div>
         </div>
+    </div>
+    <div class="row form-box">
         <div class="column small-12 text-center"><br/><br/>
             <h2 class="form-title">Thank You</h2>
             <p>This interview has been conducted in accordance to briefing instructions. </p>
             <p>हाम्रो सर्वेमा सहभागि भई सबै प्रश्नहरुको उत्तर दिनु भएकोमा तपाईलाई धन्यवाद ।</p>
+            <a href="#" class="button" title="Start New Survey">Start New Survey&nbsp;&rarr;</a>
         </div>
     </div>
 <footer class="footer">
@@ -2381,6 +2929,7 @@
         , All Rights Reserved.
     </div>
 </footer>
+<script src="./js-lib/multiselect.js" type="text/javascript"></script>
 <script src="./scripts.min.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+.multi-data-selector {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 4px 10px;
+    cursor: text;
+}
+
+.multi-data-selector select {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.multi-data-selector .multiple-selector-data {
+    width: 100%;
+    min-height: 26px;
+}
+
+.multi-data-selector .multiple-selector-option {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 2px 12px;
+    margin: 0 6px 4px 0;
+    font-size: 13px;
+}
+
+.multi-data-selector .multi-auto-suggested-data,
+.multi-data-selector [list="multiSelectorAutoSuggest"] {
+    display: inline;
+}
+
+.multi-data-selector [list] {
+    border: 0;
+    height: 30px;
+}
+
+.multi-data-selector [list]:focus {
+    outline: none;
+}
+
+.multi-data-selector [list]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.multi-data-selector input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.multi-data-selector input {
+    padding: 0;
+}
+
+.multi-data-selector .option-data-selected-remover {
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    display: inline-block;
+    background-color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.multi-data-selector .option-data-selected-remover::before {
+    content: "x";
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 12px;
+    font-size: 11px;
+}
