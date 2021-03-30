@@ -4,22 +4,6 @@
 
 jQuery(document).ready(function(){
     /**
-     * Form fields label handler
-     */
-    // var jsInput = jQuery("input, select, textarea");
-
-    // jsInput.on('click focus', function() {
-    //     jQuery(this).parents('li, p').addClass('edit');
-    // });
-
-    // jsInput.each(function(){
-    //     var $select = $(this);
-    //     if($select.val()) {
-    //         $select.closest('li, p').addClass('edit');
-    //     }
-    // });
-
-    /**
      * Rating script
      * */
      let ratingStar = document.querySelectorAll('.rate-box input[type*="radio"]');
@@ -83,4 +67,80 @@ jQuery(document).ready(function(){
             });
         });
      }
+
+     /**
+      * @MC_SMC Manipulate Cities
+      */
+        $.getJSON("../js-lib/mc-smc.json", function(json) {
+            let districtBox = jQuery("#district"),
+                mcSmcBox = jQuery("#mc-smc");
+            districtBox.on("change", function(e) {
+                // console.log(this.value);
+                var cityParent = this.value;                
+                var arr = $.map(json, function(item, key){
+                    if(key == cityParent) {
+                        mcSmcBox.html('');
+                        item.forEach((city, index) => {
+                            mcSmcBox.append('<li class="radio-field">'+
+                            '<input type="radio" id="mc_msc_' + key + (index + 1) + '" name="mc_msc_' + key + (index + 1) + '" value="' + city + '">'+
+                            '<label for="mc_msc_' + key + (index + 1) + '">' + city + '</label>'+
+                            '</li>');
+                        });
+                    }
+
+                    // item.set = json[item.set];
+                    // console.log(key);
+                    // return item;
+                });
+            });
+        });
+
+        /**
+      * @MC_SMC Manipulate Cities
+      */
+         function getSEC(e) {
+            $.getJSON("../js-lib/sec.json", function(json) {
+                let occupation = jQuery('[name="occupation"]'),
+                    education = jQuery('[name="education"]'),
+                    secquota = jQuery('[name="sec_quota"] option');
+                    var occupationData = "",
+                    educationData = "";
+     
+                occupation.on("change", function(e) {
+                    occupationData = this.value;
+                    $.map(json, function(item, key){
+                        item.sec.forEach((data, index) => {
+                            if((data.data[0] == occupationData) && (data.data[1] == educationData)) {
+                                secquota.each(function(){
+                                    if(jQuery(this).val() == data.data[2]) {
+                                        jQuery(this).attr("selected","selected");
+                                    }
+                                });
+                            }
+                        });
+                    }); 
+                });
+    
+                education.on("change", function() {
+                    educationData = this.value;    
+                    $.map(json, function(item, key){
+                        item.sec.forEach((data, index) => {
+                            if((data.data[0] == occupationData) && (data.data[1] == educationData)) {
+                                secquota.each(function(){
+                                    if(jQuery(this).val() == data.data[2]) {
+                                        jQuery(this).attr("selected","selected");
+                                    }
+                                });
+                            }
+                        });
+                    });
+                });
+            });
+         }
+
+         getSEC();
+
+        jQuery('.toggle-next-clicker-7').on("click", function() {
+            getSEC();
+        });
 });

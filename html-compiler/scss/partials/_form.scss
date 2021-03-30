@@ -390,3 +390,15 @@ hr {
         position: relative;
     }
 }
+
+.read-box {
+    opacity: 0.5;
+    pointer-events: none;
+    
+    
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        pointer-events: none;
+    }
+}

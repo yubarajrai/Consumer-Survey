@@ -51,65 +51,7 @@
             <fieldset class="toggle-data-box-1">
                 <div class="toggle-data-1">
                     <h3 class="form-title__sub">MC/SMC</h3>
-                    <ul>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_1" name="mc_msc" value="Biratnagar MC">
-                            <label for="mc_msc_1">Biratnagar MC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_2" name="mc_msc" value="Kathmandu MC">
-                            <label for="mc_msc_2">Kathmandu MC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_3" name="mc_msc" value="Ghorahi SMC">
-                            <label for="mc_msc_3">Ghorahi SMC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_4" name="mc_msc" value="Itahari SMC">
-                            <label for="mc_msc_4">Itahari SMC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_5" name="mc_msc" value="Lalitpur MC">
-                            <label for="mc_msc_5">Lalitpur MC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_6" name="mc_msc" value="Birendernagar MC">
-                            <label for="mc_msc_6">Birendernagar MC</label>
-                        </li>
-
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_7" name="mc_msc" value="Dharan SMC">
-                            <label for="mc_msc_7">Dharan SMC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_8" name="mc_msc" value="Bharatpur MC">
-                            <label for="mc_msc_8">Bharatpur MC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_9" name="mc_msc" value="Dhangadhi SMC">
-                            <label for="mc_msc_9">Dhangadhi SMC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_10" name="mc_msc" value="Birgunj MC">
-                            <label for="mc_msc_10">Birgunj MC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_11" name="mc_msc" value="Pokhara MC">
-                            <label for="mc_msc_11">Pokhara MC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_12" name="mc_msc" value="Bhimdatta MC">
-                            <label for="mc_msc_12">Bhimdatta MC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_13" name="mc_msc" value="Janakpur SMC">
-                            <label for="mc_msc_13">Janakpur SMC</label>
-                        </li>
-                        <li class="radio-field">
-                            <input type="radio" id="mc_msc_14" name="mc_msc" value="Nepalgunj SMC">
-                            <label for="mc_msc_14">Nepalgunj SMC</label>
-                        </li>
-                    </ul>
+                    <ul id="mc-smc"><li></li></ul>
                 </div>
                 <div class="toggle-data-1__sibling">
                     <ul>
@@ -233,10 +175,10 @@
                         <label for="age">Age</label>
                         <input type="number" id="age" name="age"/>
                     </li>
-                    <li class="half-width">
+                    <li class="half-width read-box">
                         <label for="age_code">Age Code</label>
                         <select id="age_code" name="age_code" class="toggle-clicker-2">
-                            <option value="">Choose Age Code</option>
+                            <option value="">Age Code</option>
                             <option value="-11">Under 12</option>
                             <option value="12-15">12-15 Yrs</option>
                             <option value="16-19">16-19 Yrs</option>
@@ -351,16 +293,16 @@
                         <label for="occupation_4">पसले</label>
                     </li>
                     <li class="radio-field one-third">
-                        <input type="radio" id="occupation_5" name="occupation" value="व्यापारी/उद्योगपति No Employee">
-                        <label for="occupation_5">व्यापारी/उद्योगपति No Employee</label>
+                        <input type="radio" id="occupation_5" name="occupation" value="व्यापारी/उद्योगपति No. of Employee - None">
+                        <label for="occupation_5">व्यापारी/उद्योगपति No. of Employee - None</label>
                     </li>
                     <li class="radio-field one-third">
-                        <input type="radio" id="occupation_6" name="occupation" value="व्यापारी/उद्योगपति : 1-9">
-                        <label for="occupation_6">व्यापारी/उद्योगपति : 1-9</label>
+                        <input type="radio" id="occupation_6" name="occupation" value="व्यापारी/उद्योगपति No. of Employee - 1-9">
+                        <label for="occupation_6">व्यापारी/उद्योगपति No. of Employee - 1-9</label>
                     </li>
                     <li class="radio-field one-third">
-                        <input type="radio" id="occupation_7" name="occupation" value="व्यापारी/उद्योगपति :  10+">
-                        <label for="occupation_7">व्यापारी/उद्योगपति :  10+</label>
+                        <input type="radio" id="occupation_7" name="occupation" value="व्यापारी/उद्योगपति No. of Employee - 10+">
+                        <label for="occupation_7">व्यापारी/उद्योगपति No. of Employee - 10+</label>
                     </li>
                     <li class="radio-field one-third">
                         <input type="radio" id="occupation_8" name="occupation" value="स्वरोजगार पेशार्कमी">
@@ -407,8 +349,8 @@
                         <label for="education_4">एस एल सी वा आई ए</label>
                     </li>
                     <li class="radio-field one-third">
-                        <input type="radio" id="education_5" name="education" value="क्याम्पस गएको तर स्नातक पास नगरेका">
-                        <label for="education_5">क्याम्पस गएको तर स्नातक पास नगरेका</label>
+                        <input type="radio" id="education_5" name="education" value="क्याम्पस गएको तर स्नातक पास नगरेको">
+                        <label for="education_5">क्याम्पस गएको तर स्नातक पास नगरेको</label>
                     </li>
                     <li class="radio-field one-third">
                         <input type="radio" id="education_6" name="education" value="स्नातक / स्नातकोत्तर प्राविधिक/पी.एच.डी: सामान्य">
@@ -429,7 +371,7 @@
             <fieldset>
                 <legend>SEC Quota</legend>
                 <ul>
-                    <li class="full-width">
+                    <li class="full-width read-box">
                         <label for="sec_quota">SEC Quota Status</label>
                         <select id="sec_quota" name="sec_quota">
                             <option value="">Choose SEC Quota</option>
