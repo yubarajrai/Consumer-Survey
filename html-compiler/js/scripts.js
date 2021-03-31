@@ -98,49 +98,63 @@ jQuery(document).ready(function(){
         /**
       * @MC_SMC Manipulate Cities
       */
-         function getSEC(e) {
-            $.getJSON("../js-lib/sec.json", function(json) {
-                let occupation = jQuery('[name="occupation"]'),
-                    education = jQuery('[name="education"]'),
-                    secquota = jQuery('[name="sec_quota"] option');
-                    var occupationData = "",
-                    educationData = "";
-     
-                occupation.on("change", function(e) {
-                    occupationData = this.value;
-                    $.map(json, function(item, key){
+         var occupation = jQuery('[name="occupation"]'),
+         education = jQuery('[name="education"]'),
+         secquota = jQuery('[name="sec_quota"] option');
+         
+         occupation.each(function(index, item) {
+            console.log(`input${index}: ${this.id}`);
+            itemId = `${this.id}`;
+            jQuery("#" + itemId).on('click', function(e){
+                sessionStorage.setItem("occupationData", this.value);
+                $.ajax({url: "../js-lib/sec.json", success: function(result){
+
+                    $.map(result, function(item, key){
                         item.sec.forEach((data, index) => {
-                            if((data.data[0] == occupationData) && (data.data[1] == educationData)) {
-                                secquota.each(function(){
-                                    if(jQuery(this).val() == data.data[2]) {
-                                        jQuery(this).attr("selected","selected");
+                            console.log(sessionStorage.educationData);
+                            console.log(sessionStorage.occupationData);
+                            if((data.data[0] == sessionStorage.occupationData) && (data.data[1] == sessionStorage.educationData)) {
+                                secquota.each(function(index, secItem) {
+                                    if(secItem.value == data.data[2]) {
+                                        secItem.setAttribute("selected","selected");
+
+                                        getSiblings(secItem).forEach(item => {
+                                            item.removeAttribute('selected');
+                                        });
                                     }
-                                });
+                                })
                             }
                         });
                     }); 
-                });
-    
-                education.on("change", function() {
-                    educationData = this.value;    
-                    $.map(json, function(item, key){
+                }});
+             });
+         })
+
+         education.each(function(index, item) {
+            console.log(`input${index}: ${this.id}`);
+            itemId = `${this.id}`;
+            jQuery("#" + itemId).on('click', function(e){
+                sessionStorage.setItem("educationData", this.value);
+                $.ajax({url: "../js-lib/sec.json", success: function(result){
+
+                    $.map(result, function(item, key){
                         item.sec.forEach((data, index) => {
-                            if((data.data[0] == occupationData) && (data.data[1] == educationData)) {
-                                secquota.each(function(){
-                                    if(jQuery(this).val() == data.data[2]) {
-                                        jQuery(this).attr("selected","selected");
+                            console.log(sessionStorage.occupationData);
+                            console.log(sessionStorage.educationData);
+                            if((data.data[0] == sessionStorage.occupationData) && (data.data[1] == sessionStorage.educationData)) {
+                                secquota.each(function(index, secItem) {
+                                    if(secItem.value == data.data[2]) {
+                                        secItem.setAttribute("selected","selected");
+                                        
+                                        getSiblings(secItem).forEach(item => {
+                                            item.removeAttribute('selected');
+                                        });
                                     }
-                                });
+                                })
                             }
                         });
-                    });
-                });
+                    }); 
+                }});
             });
-         }
-
-         getSEC();
-
-        jQuery('.toggle-next-clicker-7').on("click", function() {
-            getSEC();
         });
 });
